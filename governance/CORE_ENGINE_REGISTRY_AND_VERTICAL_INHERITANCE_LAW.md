@@ -1,162 +1,218 @@
 # 🧩 CORE — ENGINE REGISTRY & VERTICAL INHERITANCE LAW (CANONICAL)
 
-Authority Level: Binding Platform Law  
-Enforcement Chain (Non-Negotiable):
-
-1. CORE_CONSTITUTIONAL_STOP_LAYER.md  
-2. CORE_PLATFORM_CONSTITUTION.md  
-3. CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md  
-4. CORE_GOVERNANCE_INDEX_CHAIN_OF_AUTHORITY.md  
-5. Engine-specific governance files  
-6. Data boundaries, permissions, feature flags  
-7. UI and tooling  
-
+File: `CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md`  
+Authority Level: **Binding Platform Law**  
+Status: ✅ LOCKED | ✅ BINDING | ✅ NON-OPTIONAL  
 Effective Date: First Public CORE Deployment  
 
 ---
 
-## 🧠 PURPOSE
+## 🧱 ENFORCEMENT CHAIN (STRICT · NON-NEGOTIABLE)
+
+This law is enforced in the following order. No layer may bypass or weaken a higher layer.
+
+1. `CORE_CONSTITUTIONAL_STOP_LAYER.md`  
+2. `CORE_PLATFORM_CONSTITUTION.md`  
+3. **CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md (this file)**  
+4. `CORE_GOVERNANCE_INDEX_CHAIN_OF_AUTHORITY.md`  
+5. Engine-specific governance & safety files  
+6. Database enforcement (RLS · Views · RPCs · Constraints · Audit)  
+7. CI/CD gates & engine release pipelines  
+8. UI & tooling (lowest authority)
+
+If any conflict exists → **higher authority wins immediately**.
+
+---
+
+## 🧠 PURPOSE (BINDING INTENT)
 
 This law defines, in enforceable terms:
 
-- What CORE is
-- What a CORE Work Engine (Vertical) is
-- How engines inherit CORE governance
-- What engines are prohibited from controlling
-- The canonical CORE Engine Family registry
+- What CORE is — and is not  
+- What a CORE Work Engine (Vertical) is — and is not  
+- How engines inherit governance from CORE  
+- What engines are permanently prohibited from controlling  
+- The canonical CORE Engine Family registry  
+- How engines are admitted, governed, executed, and audited  
 
-This document is subordinate only to:
+This document is subordinate **only** to:
 
-- `CORE_CONSTITUTIONAL_STOP_LAYER.md`
-- `CORE_PLATFORM_CONSTITUTION.md`
+- `CORE_CONSTITUTIONAL_STOP_LAYER.md`  
+- `CORE_PLATFORM_CONSTITUTION.md`  
 
-If any conflict exists → **those documents win immediately**.
-
----
-
-## 🧩 CORE VS WORK ENGINES (CANONICAL DEFINITION)
-
-### CORE IS (OPERATING SYSTEM ONLY):
-
-CORE is responsible for:
-
-- Identity & user accounts
-- Project & workspace management
-- Data storage & artifact persistence
-- Permissions & role enforcement
-- Pricing tiers & entitlements
-- Sensor I/O orchestration
-- Engine registration & lifecycle
-- Experiment logging & audit trails
-- Visualization shell
-- Feature flag enforcement
-- Governance & compliance enforcement
-
-CORE **contains no physics, solvers, or domain truth**.
+If any system, document, or implementation contradicts those →  
+**those documents win without exception**.
 
 ---
 
-### WORK ENGINES (VERTICALS) ARE:
+## 🧩 CORE VS WORK ENGINES (CANONICAL DEFINITIONS)
 
-Each Work Engine is an isolated physics domain with its own:
+### CORE IS (OPERATING SYSTEM — NO DOMAIN TRUTH)
 
-- Solvers
-- State model
-- Inputs & outputs
-- Parameters
-- Validation logic
-- Domain-specific truth generation
+CORE is the operating system that provides:
+
+- Identity & account systems  
+- Project & workspace isolation  
+- Data storage & artifact persistence  
+- Permissions, roles, and entitlement enforcement  
+- Pricing tiers & access control  
+- Sensor I/O orchestration  
+- Engine registration & lifecycle management  
+- Experiment logging & immutable audit trails  
+- Visualization shell & tooling surfaces  
+- Feature flag enforcement  
+- Governance & compliance enforcement  
+
+**CORE contains no physics, solvers, or domain truth.**  
+CORE never interprets reality — it governs those that do.
+
+---
+
+### WORK ENGINES (VERTICALS) ARE (DOMAIN TRUTH ONLY)
+
+Each Work Engine is an isolated, single-authority domain engine that defines:
+
+- Its own solvers  
+- Its own state model  
+- Its own inputs & outputs  
+- Its own parameters  
+- Its own validation logic  
+- Its own domain-specific truth generation  
 
 Engines **never share physics logic**.
 
 Engines MAY share only:
 
-- CORE UI shell
-- CORE file system abstraction
-- CORE visualization layers
-- CORE-managed data pipes
-- CORE governance enforcement
+- CORE UI shell  
+- CORE file system abstraction  
+- CORE visualization layers  
+- CORE-managed data pipes  
+- CORE governance enforcement  
 
 ---
 
-## ⚖️ GOVERNANCE INHERITANCE (ABSOLUTE)
+## ⚖️ GOVERNANCE INHERITANCE (ABSOLUTE & IRREVOCABLE)
 
 Every engine registered in CORE:
 
 ✅ Is permanently bound by `CORE_CONSTITUTIONAL_STOP_LAYER.md`  
 ✅ Is permanently bound by `CORE_PLATFORM_CONSTITUTION.md`  
-✅ Is permanently bound by this document  
-✅ Is subject to `CORE_GOVERNANCE_INDEX_CHAIN_OF_AUTHORITY.md`  
+✅ Is permanently bound by **this law**  
+✅ Is governed by `CORE_GOVERNANCE_INDEX_CHAIN_OF_AUTHORITY.md`  
 
-No engine may:
+Inheritance is **automatic, implicit, and non-optional**.
 
-❌ Define its own identity system  
-❌ Define its own permissions or roles  
+---
+
+## 🚫 ENGINE LIMITS (HARD PROHIBITIONS)
+
+No engine may EVER:
+
+❌ Define or manage identities  
+❌ Define roles, permissions, or access tiers  
 ❌ Bypass CORE audit logging  
 ❌ Override CORE feature flags  
-❌ Alter pricing tiers or entitlements  
-❌ Redefine governance  
-❌ Access data outside its authorized scope  
+❌ Alter pricing, entitlements, or monetization logic  
+❌ Redefine governance or safety rules  
+❌ Read or infer data from other engines without explicit CORE mediation  
+❌ Mutate artifacts after sealing  
+❌ Publish or export results without CORE permission  
 
-If an engine attempts to violate CORE governance →  
-**the engine is invalidated by law**.
+If an engine attempts any prohibited behavior →  
+**the engine is invalidated by law and must be disabled**.
 
 ---
 
 ## 🧠 CANONICAL CORE ENGINE FAMILY (LOCKED REGISTRY)
 
-The following engines define CORE’s physics truth layer:
+The following engines define CORE’s **physics truth layer**.
+
+This registry is authoritative and closed unless amended by governance.
 
 | # | Engine | Domain |
 |---|--------|--------|
-| 1 | RGSR | Unified multi-domain fusion |
-| 2 | ARES | Acoustic resonance |
-| 3 | HYDRA | Water & fluid resonance |
-| 4 | THERMOS | Thermal dynamics |
-| 5 | MAGNETAR | Electromagnetic fields |
-| 6 | LITHOS | Geology & materials |
-| 7 | ATMOS | Atmospheric physics |
-| 8 | KINETIC | Structural mechanics |
-| 9 | CRYSTAL | Lattice & molecular |
-|10 | SIGNAL | Sensor fusion & inference |
+| 1 | **RGSR** | Unified multi-domain fusion |
+| 2 | **ARES** | Acoustic resonance |
+| 3 | **HYDRA** | Water & fluid resonance |
+| 4 | **THERMOS** | Thermal dynamics |
+| 5 | **MAGNETAR** | Electromagnetic fields |
+| 6 | **LITHOS** | Geology & materials |
+| 7 | **ATMOS** | Atmospheric physics |
+| 8 | **KINETIC** | Structural mechanics |
+| 9 | **CRYSTAL** | Lattice & molecular physics |
+|10 | **SIGNAL** | Sensor fusion & inference |
 
-This list is authoritative.
+These engines generate **ground-truth physics**.
 
-Changes require:
-- Governance amendment
-- Registry update
-- Git audit record
+All higher-level intelligence, analytics, and interpretation layers depend on them.
 
 ---
 
-## 🛑 ENGINE-LEVEL PROHIBITIONS
+## 🔁 ENGINE REGISTRY AUTHORITY
 
-Engines may NEVER:
+An engine exists inside CORE **only if**:
 
-- Read private data from other engines
-- Infer cross-engine identity
-- Modify experiment artifacts after sealing
-- Publish without permission
-- Override CORE safety or audit rules
+- It is explicitly registered in the Engine Registry  
+- It declares its identity, version, and compatibility  
+- It emits signed manifests and verifiable artifacts  
+- It complies with CORE governance and audit rules  
+
+Unregistered engines **do not exist** inside CORE.
 
 ---
 
-## 🧾 GIT-LOCKED AUTHORITY
+## 🛡️ DATA & EXECUTION BOUNDARIES
 
-This law is enforceable **only** via GitHub.
+Engines:
+
+- Operate only within authorized project scopes  
+- Receive only inputs explicitly provided by CORE  
+- Emit outputs only through CORE-managed pipelines  
+- Never access raw user, identity, or billing data  
+- Never communicate with other engines directly  
+
+Cross-engine interaction occurs **only** through CORE-mediated data contracts.
+
+---
+
+## 🧾 GIT-LOCKED AUTHORITY (ENFORCEMENT MECHANISM)
+
+This law is enforceable **only through Git-tracked authority**.
 
 If a rule is not written in:
-- `CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md`
-- or its parent authorities  
+
+- `CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md`  
+- or a higher authority document  
 
 → it has **no standing inside CORE**.
+
+UI behavior, documentation, comments, or informal agreements  
+**do not constitute governance**.
+
+---
+
+## 🧬 AMENDMENT REQUIREMENTS (STRICT)
+
+Changes to this law require:
+
+- Governance approval  
+- Explicit amendment commit  
+- Audit-visible Git history  
+- Registry updates (if applicable)  
+
+Silent changes are forbidden.
 
 ---
 
 ## ✅ RATIFICATION
 
-Ratified by:
+This law is ratified and enforced by:
 
-- CORE_CONSTITUTIONAL_STOP_LAYER.md  
-- CORE_PLATFORM_CONSTITUTION.md  
-- CORE_GOVERNANCE_INDEX_CHAIN_OF_AUTHORITY.md  
+- `CORE_CONSTITUTIONAL_STOP_LAYER.md`  
+- `CORE_PLATFORM_CONSTITUTION.md`  
+- `CORE_GOVERNANCE_INDEX_CHAIN_OF_AUTHORITY.md`  
+
+Once committed:
+
+> **CORE engine governance is frozen at the authority level.**  
+> All future work is execution only.
