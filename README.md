@@ -1,112 +1,130 @@
-# CORE PLATFORM — MASTER CONTROL REPOSITORY (CANONICAL)
+# 🧠 CORE PLATFORM — GOVERNED SCIENTIFIC OPERATING SYSTEM
 
-CORE is a governed meta-infrastructure platform.
+CORE is a **meta-infrastructure platform** for running, governing, and coordinating
+physics-grade work engines and scientific systems.
 
-This repository is the **single source of truth** for:
+CORE is not a simulator.  
+CORE is not a solver.  
+CORE has **no physics of its own**.
 
-- CORE identity & boundaries
-- CORE governance law (Git-locked)
-- Enforcement hierarchy (Git → Systems → Admin RPCs → UI)
-- Curation doctrine (what CORE will and will not host/enable)
-- Contributor & AI governance contract
-- Founder protection & succession constraints
-
-❌ No production application code lives here  
-✅ This repository is the **governance brain** of CORE
+CORE is the **operating system**.
 
 ---
 
-## 🔒 SUPREME AUTHORITY
+## 🧩 WHAT CORE IS
 
-- `governance/CORE_PLATFORM_CONSTITUTION.md`  
-  → Highest authority inside CORE  
-- `governance/CORE_CONSTITUTIONAL_STOP_LAYER.md`  
-  → Absolute non-overrideable lock layer
+CORE provides:
 
-If anything in any CORE repository conflicts with the Constitution →  
-**the Constitution wins instantly**, unless the Stop Layer overrides it.
+- Identity & account system
+- Project & lab isolation
+- Data & artifact storage
+- Cryptographic experiment sealing
+- Engine registry & lifecycle
+- Permissions & roles
+- Feature flags & entitlements
+- Audit logging
+- Visualization shell
+- Governance enforcement
 
-Cross-Reference:
-- `governance/CORE_GOVERNANCE_INDEX_CHAIN_OF_AUTHORITY.md`
-
----
-
-## 🛡️ GOVERNANCE FIRST (NON-NEGOTIABLE)
-
-CORE is permanently built on:
-
-- Safety-first design
-- Consent-first data rules
-- Non-extractive infrastructure doctrine
-- Anti-profiling / non-identity sorting
-- No silent power / no shadow privileges
-- Git-locked authority
-- Audit-first enforcement
-
-These rules apply to:
-
-✅ CORE services  
-✅ CORE tooling & admin systems  
-✅ All curated platforms/products that run on CORE (as applicable)  
-✅ All UI surfaces  
-✅ All AI contributors  
-
-There are **no exemptions**.
+CORE exists so that **scientific truth can be produced, shared, and trusted** without
+silent mutation, inference leakage, or power concentration.
 
 ---
 
-## 🧱 WHAT CORE IS (AND IS NOT)
+## 🧪 WHAT CORE IS NOT
 
-CORE is:
+CORE does NOT:
 
-- Meta infrastructure
-- Governance enforcement layer
-- Trust-first platform tooling
-- Curation & compliance framework
+- Implement physics solvers
+- Perform simulations itself
+- Interpret scientific meaning
+- Control experimental conclusions
+- Replace domain expertise
 
-CORE is NOT:
-
-- An ad-tech company
-- A surveillance layer
-- A demographic targeting engine
-- A profiling-based discovery engine
-- A platform that sells identity access
+All **truth generation** happens inside engines.
 
 ---
 
-## ⚠️ RULES FOR CONTRIBUTORS / AI (BINDING)
+## 🧠 CORE VS WORK ENGINES (CANONICAL)
 
-❌ No governance modification outside this repo  
-❌ No RLS / policy disabling in governed systems  
-❌ No silent schema changes  
-❌ No backdoor admin power  
-❌ No profiling fields or identity targeting  
-❌ No tracking SDKs without explicit consent law
+### CORE (Operating System)
 
-✅ Allowed without Stop Layer review:
+- Users
+- Projects
+- Labs
+- Data
+- Permissions
+- Governance
+- Auditability
 
-- Auditing
-- Hardening
-- Documentation
-- Accessibility & performance
-- Security validation
-- Implementation that strictly follows law
+### WORK ENGINES (Physics Truth Layer)
 
-Any violation = **Governance-Breaking Event**
+Each engine is its own repo and domain, with its own:
 
-Cross-Reference:
-- `governance/CORE_CONTRIBUTOR_AI_GOVERNANCE_CONTRACT.md`
+- Solvers
+- State models
+- Inputs & outputs
+- Validation logic
+- Deterministic execution
+
+Engines share:
+- UI shell
+- Storage
+- Visualization
+- Governance enforcement
+
+They **do not** share physics.
 
 ---
 
-## ✅ FINAL STATEMENT
+## 🔒 GOVERNANCE IS NON-OPTIONAL
 
-CORE exists to protect:
+CORE is a **law-bound platform**.
 
-- Humans before markets  
-- Safety before growth  
-- Consent before data  
-- Governance before convenience  
+All authority flows through:
 
-If CORE violates its own law →  
-it is no longer CORE.
+📄 `/governance/CORE_GOVERNANCE_INDEX_AND_CHAIN_OF_AUTHORITY.md`
+
+If a rule is not written in GitHub governance files →  
+**it has no authority inside CORE**.
+
+---
+
+## 🧭 CANONICAL ENGINE FAMILY
+
+CORE currently governs the following engines:
+
+1. RGSR — Unified multi-domain fusion  
+2. ARES — Acoustic resonance  
+3. HYDRA — Water & fluid resonance  
+4. THERMOS — Thermal dynamics  
+5. MAGNETAR — Electromagnetic fields  
+6. LITHOS — Geology & materials  
+7. ATMOS — Atmospheric physics  
+8. KINETIC — Structural mechanics  
+9. CRYSTAL — Lattice & molecular  
+10. SIGNAL — Sensor fusion & inference  
+
+Registry:  
+`registry/CORE_VERTICAL_REGISTRY.md`
+
+---
+
+## 🛡 TRUST & INTEGRITY GUARANTEES
+
+CORE guarantees:
+
+- Experiments are immutable once sealed
+- Artifacts are cryptographically verifiable
+- Projects are isolated by default
+- Engines cannot read each other’s private data
+- Admins cannot silently override law
+- Telemetry is minimal and consent-bound
+
+Public summary:  
+`governance/CORE_PUBLIC_TRUST_AND_SCIENTIFIC_INTEGRITY_STATEMENT.md`
+
+---
+
+## 📁 REPOSITORY STRUCTURE
+
