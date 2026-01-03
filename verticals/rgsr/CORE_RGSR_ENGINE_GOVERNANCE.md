@@ -1,7 +1,7 @@
 # 🧬 CORE — RGSR ENGINE GOVERNANCE (CANONICAL)
 
 Engine: RGSR (Resonant Geophysical Systems Research)  
-Authority Level: Engine Law  
+Authority Level: Engine-Level Governance Law  
 Parent Platform: CORE  
 Effective Date: First RGSR Public Deployment  
 
@@ -9,12 +9,12 @@ Effective Date: First RGSR Public Deployment
 
 ## 🧠 ENGINE IDENTITY
 
-RGSR is a **multi-domain physics fusion engine**.
+RGSR is a multi-domain physics fusion engine.
 
-It is NOT:
+RGSR is NOT:
 - A simulator
 - A SaaS dashboard
-- A toy experiment
+- A consumer application
 - A single-domain solver
 
 RGSR is a **distributed scientific instrument platform**.
@@ -23,71 +23,84 @@ RGSR is a **distributed scientific instrument platform**.
 
 ## ⚖️ GOVERNANCE INHERITANCE (BINDING)
 
-RGSR is permanently bound by:
+RGSR is permanently governed by, and subordinate to:
 
-- CORE Platform Constitution
-- CORE Constitutional Stop Layer
-- CORE Engine Registry & Inheritance Law
-- CORE Experiment Integrity & Reproducibility Law
-- CORE Telemetry & Consent Law
-- CORE Data Boundary & Separation Law
+1. CORE_CONSTITUTIONAL_STOP_LAYER.md  
+2. CORE_PLATFORM_CONSTITUTION.md  
+3. CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md  
+4. CORE_GOVERNANCE_INDEX_CHAIN_OF_AUTHORITY.md  
 
-RGSR may not override any CORE law.
+No RGSR subsystem may override these authorities.
 
 ---
 
 ## 🧱 RGSR FOUR-LAYER ARCHITECTURE (LOCKED)
 
 ### Layer 1 — Physics Core
+
+Governed by:
+- CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md
+
+Properties:
 - Deterministic
 - Headless
 - Scriptable
-- No auth
-- No network
+- No authentication
+- No network access
 - Cryptographically verifiable
 
-Produces:
+Produces immutable artifacts:
 - RUN_CONDITIONS.json
 - SHA256SUMS.txt
-- FFTs
+- FFT outputs
 - Peak sets
 - Perturbation deltas
-
-This layer is immutable truth.
 
 ---
 
 ### Layer 2 — RGSR Workbench (Local Instrument)
+
+Governed by:
+- CORE_PLATFORM_CONSTITUTION.md
+
+Responsibilities:
 - Project control
 - Visualization
-- Role enforcement
+- Local role enforcement
 - Artifact signing
-- Feature flags
+- Feature flag compliance
 
-No global identity control.
+No global identity authority exists here.
 
 ---
 
-### Layer 3 — Cloud Coordination (Ledger)
+### Layer 3 — Cloud Coordination Ledger
+
+Governed by:
+- CORE_PLATFORM_CONSTITUTION.md
+- CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md
+
+Responsibilities:
 - Artifact storage
 - Hash verification
 - Immutable run locking
-- Peer review & replication
-- Audit trails
-
-This layer is the scientific ledger.
+- Replication & peer review
+- Audit logging
 
 ---
 
 ### Layer 4 — Governance & Distribution
+
+Governed by:
+- CORE_CONSTITUTIONAL_STOP_LAYER.md
+- CORE_PLATFORM_CONSTITUTION.md
+
+Responsibilities:
 - Identity integration
-- Roles & permissions
+- Role enforcement
 - Publication approval
 - Moderation
-- Admin tooling
-- Safety gates
-
-This layer prevents misuse, fraud, and manipulation.
+- Safety & misuse prevention
 
 ---
 
@@ -111,38 +124,37 @@ All role actions are:
 ## 🔒 DATA & ARTIFACT RULES
 
 - Runs are immutable once sealed
-- Artifacts are hash-verified
+- Artifacts are cryptographically verified
 - Reproducibility is mandatory
-- No silent modification permitted
-- All exports are permission-gated
+- Silent modification is forbidden
+- Export requires permission
 
 ---
 
 ## 🛑 PROHIBITED USE
 
-RGSR may NOT be used for:
+RGSR may not be used for:
 - Data falsification
 - Covert surveillance
 - Weaponization
-- Manipulative experiments
 - Unreviewed public claims
+- Manipulation of results
 
-Violations trigger:
-- Immediate access revocation
-- Audit investigation
-- Permanent record
+Violations trigger enforcement under:
+- CORE_CONSTITUTIONAL_STOP_LAYER.md
 
 ---
 
-## 🧾 GIT IS LAW
+## 🧾 GIT-LOCKED AUTHORITY
 
-If it is not written in GitHub governance files → it has no authority over RGSR.
+If a rule is not written in CORE governance files →  
+it has no authority over RGSR.
 
 ---
 
 ## ✅ RATIFICATION
 
 Ratified by:
-- CORE Engine Registry
-- CORE Platform Constitution
-- CORE Constitutional Stop Layer
+- CORE_VERTICAL_REGISTRY.md  
+- CORE_PLATFORM_CONSTITUTION.md  
+- CORE_CONSTITUTIONAL_STOP_LAYER.md  
