@@ -1,30 +1,50 @@
-name: core-governance-lint
+name: governance-lint
+
 on:
   pull_request:
-    paths:
-      - "governance/**"
-      - "README.md"
-      - ".github/**"
+    branches: [ "main" ]
+  push:
+    branches: [ "main" ]
 
 jobs:
-  lint:
+  governance:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Verify required governance files exist
+      - name: Require CORE governance router + constitution + stop layer
         run: |
-          test -f governance/CORE_PLATFORM_CONSTITUTION.md
-          test -f governance/CORE_CONSTITUTIONAL_STOP_LAYER.md
-          test -f governance/CORE_GOVERNANCE_INDEX_CHAIN_OF_AUTHORITY.md
-          test -f governance/CORE_FOUNDER_PROTECTION_AND_SUCCESSION.md
-          test -f governance/CORE_CONTRIBUTOR_AI_GOVERNANCE_CONTRACT.md
-          test -f governance/CORE_CONTRIBUTOR_GOVERNANCE_NOTICE.md
+          set -euo pipefail
 
-      - name: Verify Stop Layer references Constitution
-        run: |
-          grep -qi "CORE_PLATFORM_CONSTITUTION" governance/CORE_CONSTITUTIONAL_STOP_LAYER.md
+          req=(
+            "governance/CORE_GOVERNANCE_INDEX_AND_CHAIN_OF_AUTHORITY.md"
+            "governance/CORE_PLATFORM_CONSTITUTION.md"
+            "governance/CORE_CONSTITUTIONAL_STOP_LAYER.md"
 
-      - name: Verify Chain of Authority references Stop Layer
-        run: |
-          grep -qi "CORE_CONSTITUTIONAL_STOP_LAYER" governance/CORE_GOVERNANCE_INDEX_CHAIN_OF_AUTHORITY.md
+            "governance/CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md"
+            "governance/CORE_EXPERIMENT_INTEGRITY_AND_REPRODUCIBILITY_LAW.md"
+            "governance/CORE_TELEMETRY_OBSERVERVABILITY_CONSENT_LAW.md"
+            "governance/CORE_SENSOR_IO_SAFETY_AND_MISUSE_PREVENTION_LAW.md"
+            "governance/CORE_TENANT_BOUNDARY_AND_DATA_SEPARATION_LAW.md"
+            "governance/CORE_PRICING_TIERS_AND_ENGINE_ENTITLEMENTS_LAW.md"
+            "governance/CORE_PLATFORM_OPERATIONS_AND_ADMIN_AUTHORIZATION_LAW.md"
+
+            "registry/CORE_VERTICAL_REGISTRY.md"
+            "governance/CORE_PUBLIC_TRUST_AND_SCIENTIFIC_INTEGRITY_STATEMENT.md"
+            "governance/CORE_GOVERNANCE_MAP.md"
+            "governance/CORE_GOVERNANCE_MAP_ONE_PAGE.md"
+          )
+
+          missing=0
+          for f in "${req[@]}"; do
+            if [ ! -f "$f" ]; then
+              echo "MISSING GOVERNANCE FILE: $f"
+              missing=1
+            fi
+          done
+
+          if [ "$missing" -ne 0 ]; then
+            exit 1
+          fi
+
+          echo "Governance lint OK."
