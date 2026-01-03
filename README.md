@@ -127,4 +127,17 @@ Public summary:
 ---
 
 ## 📁 REPOSITORY STRUCTURE
+/governance → Binding platform law
+/registry → Canonical engine registry
+/verticals → Engine governance (no physics code)
+/architecture → System design references
+/docs → Non-law documentation
 
+---
+
+## 🧾 FINAL STATEMENT
+
+CORE exists to make **real science harder to fake**.
+
+If CORE ever violates its own governance →  
+it is no longer CORE.
