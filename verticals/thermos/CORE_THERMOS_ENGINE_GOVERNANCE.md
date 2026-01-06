@@ -1,58 +1,74 @@
-# CORE ENGINE — {ENGINE_CODE} GOVERNANCE (CANONICAL)
+# CORE ENGINE — THERMOS GOVERNANCE (CANONICAL)
 
-Engine Key: {ENGINE_CODE}
-Engine Role: TRUTH_ENGINE | TRUTH_ADJACENT_COMPUTE | FUSION_ENGINE
-Authority Level: Engine Governance (Binding)
-Status: ✅ BINDING | ✅ NON-OPTIONAL
+Engine Key: THERMOS  
+Engine Role: TRUTH_ENGINE  
+Authority Level: Engine Governance (Binding)  
+Status: ✅ BINDING | ✅ NON-OPTIONAL  
 
 ## 1. Governance Inheritance
 
-This engine is permanently subordinate to CORE platform law.
-
 Inherited base governance:
-- TRUTH_ENGINE_BASE_GOVERNANCE.md (or applicable base)
+- TRUTH_ENGINE_BASE_GOVERNANCE.md
+
+Inherited CORE law:
 - CORE_CONSTITUTIONAL_STOP_LAYER.md
 - CORE_PLATFORM_CONSTITUTION.md
 - CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md
+- CORE_GOVERNANCE_INDEX_CHAIN_OF_AUTHORITY.md
 - CORE_EXPERIMENT_INTEGRITY_AND_REPRODUCIBILITY_LAW.md
 - CORE_TENANT_BOUNDARY_AND_DATA_SEPARATION_LAW.md
+- CORE_TELEMETRY_OBSERVABILITY_CONSENT_LAW.md
+- CORE_SENSOR_IO_SAFETY_AND_MISUSE_PREVENTION_LAW.md
 
 If any conflict exists → CORE law prevails immediately.
 
 ## 2. Engine Scope
 
-(Engine-specific physics scope only.)
+THERMOS computes thermal physics outputs:
+- diffusion, convection, radiative transfer (as modeled)
+- temperature fields and gradients
+- heat flux fields
+- thermal expansion indicators (as physics outputs only)
 
 ## 3. Explicit Non-Scope
 
-What this engine **cannot** do (medical, classification, surveillance, etc.).
+THERMOS cannot:
+- claim medical safety thresholds or biological outcomes
+- produce regulatory or compliance verdicts
+- classify objects or infer intent
+- manage identity, permissions, tiers, billing, feature flags, or governance state
 
 ## 4. Execution & Determinism
 
-- Deterministic execution required
-- No network access
-- Inputs delivered by CORE runtime only
-- Outputs returned to CORE only
-- No post-seal mutation
+- Deterministic execution required.
+- No network access.
+- Inputs delivered by CORE runtime only.
+- Outputs returned to CORE only.
+- No post-seal mutation.
 
 ## 5. Artifacts & Sealing Expectations
 
-Reference:
-- RUN_BUNDLE_SPEC.md
-- SEALING_SPEC.md
+References:
+- governance/RUN_BUNDLE_SPEC.md
+- governance/UNITS_AND_CONVERSIONS.md
+- governance/PHYSICS_CAPABILITY_MATRIX.md
+- Engine repo SEALING/SEALING_SPEC.md and schemas
 
-Engine emits schema-valid outputs only.
+Engine emits schema-valid outputs only; CORE seals.
 
 ## 6. Coupling Semantics
 
-- No peer delivery
-- No implicit coupling
-- CORE mediates all data flow
-- Coupling rules are declarative, not executable
+- No peer delivery.
+- CORE mediates all cross-engine data flow.
+- COUPLING_RULES.json is declarative.
 
 ## 7. Prohibited Use
 
-Explicit list.
+- medical or clinical directives
+- weaponization, targeting, operational directives
+- identity inference or user profiling
+- modification of sealed artifacts
+- classification claims (missile/rocket/submarine/etc.)
 
 ## 8. Change Control
 
@@ -60,5 +76,5 @@ Manifest + registry update required.
 
 ## 9. Declaration
 
-This engine emits physics truth only.
-Meaning and action are applied by CORE lenses.
+THERMOS emits thermal physics truth only.
+Meaning and action are applied by CORE lenses, never THERMOS.
