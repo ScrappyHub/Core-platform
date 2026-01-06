@@ -1,55 +1,77 @@
-# 🪨 CORE ENGINE — LITHOS GOVERNANCE (CANONICAL)
+# CORE ENGINE — LITHOS GOVERNANCE (CANONICAL)
 
-File: `verticals/lithos/CORE_LITHOS_ENGINE_GOVERNANCE.md`  
-Engine Key: **LITHOS**  
+Engine Key: LITHOS  
+Engine Role: TRUTH_ENGINE  
 Authority Level: Engine Governance (Binding)  
 Status: ✅ BINDING | ✅ NON-OPTIONAL  
 
-## 1. Authority & Inheritance
+## 1. Governance Inheritance
 
-LITHOS is bound by CORE governance and registry contract.
+Inherited base governance:
+- TRUTH_ENGINE_BASE_GOVERNANCE.md
 
-## 2. Scope
+Inherited CORE law:
+- CORE_CONSTITUTIONAL_STOP_LAYER.md
+- CORE_PLATFORM_CONSTITUTION.md
+- CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md
+- CORE_GOVERNANCE_INDEX_CHAIN_OF_AUTHORITY.md
+- CORE_EXPERIMENT_INTEGRITY_AND_REPRODUCIBILITY_LAW.md
+- CORE_TENANT_BOUNDARY_AND_DATA_SEPARATION_LAW.md
+- CORE_TELEMETRY_OBSERVABILITY_CONSENT_LAW.md
+- CORE_SENSOR_IO_SAFETY_AND_MISUSE_PREVENTION_LAW.md
 
-LITHOS defines layered material truth:
-- impedance and absorption characteristics
-- conductivity and permittivity fields
-- elasticity/damping profiles
-- fracture/moisture inputs where declared
-- effective material response surfaces
+If any conflict exists → CORE law prevails immediately.
 
-## 3. Non-Scope
+## 2. Engine Scope
 
-LITHOS may NOT:
-- infer unrelated project identity
-- produce extraction or drilling recommendations
-- bypass CORE data boundaries
+LITHOS computes geology and materials physics outputs:
+- layered media response indicators
+- impedance and absorption characteristics (as modeled)
+- elastic/structural material response primitives (as modeled)
 
-## 4. Determinism
+## 3. Explicit Non-Scope
 
-All material libraries and coefficients used must be versioned and logged.
+LITHOS cannot:
+- claim resource ownership or legal conclusions
+- classify events or threats
+- manage identity, permissions, tiers, billing, feature flags, or governance state
 
-## 5. Required Artifacts
+## 4. Execution & Determinism
 
-- `ENGINE_MANIFEST.json`
-- `RUN_CONDITIONS.json`
-- `SHA256SUMS.txt`
-- `MATERIAL_STACK.json`
-- `IMPEDANCE_REPORT.json`
-- `CONDUCTIVITY_FIELD.json`
-- `DAMPING_PROFILE.json`
-- `ARTIFACT_INDEX.json`
+- Deterministic execution required.
+- No network access.
+- Inputs delivered by CORE runtime only.
+- Outputs returned to CORE only.
+- No post-seal mutation.
 
-## 6. Safety & Misuse Controls
+## 5. Artifacts & Sealing Expectations
 
-Outputs must include:
-- assumptions and limitations
-- warnings where inputs are insufficient
+References:
+- governance/RUN_BUNDLE_SPEC.md
+- governance/UNITS_AND_CONVERSIONS.md
+- governance/PHYSICS_CAPABILITY_MATRIX.md
+- Engine repo SEALING/SEALING_SPEC.md and schemas
 
-## 7. Publishing Rules
+Engine emits schema-valid outputs only; CORE seals.
 
-Sealed run required.
+## 6. Coupling Semantics
 
-## 8. Amendments
+- No peer delivery.
+- CORE mediates all cross-engine data flow.
+- COUPLING_RULES.json is declarative.
 
-Governance review required.
+## 7. Prohibited Use
+
+- weaponization, targeting, operational directives
+- identity inference or user profiling
+- modification of sealed artifacts
+- classification claims (missile/rocket/submarine/tsunami/etc.)
+
+## 8. Change Control
+
+Manifest + registry update required.
+
+## 9. Declaration
+
+LITHOS emits geology/material physics truth only.
+Meaning and action are applied by CORE lenses, never LITHOS.
