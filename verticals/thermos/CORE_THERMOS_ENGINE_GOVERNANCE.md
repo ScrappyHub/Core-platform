@@ -1,59 +1,64 @@
-# 🌡 CORE ENGINE — THERMOS GOVERNANCE (CANONICAL)
+# CORE ENGINE — {ENGINE_CODE} GOVERNANCE (CANONICAL)
 
-File: `verticals/thermos/CORE_THERMOS_ENGINE_GOVERNANCE.md`  
-Engine Key: **THERMOS**  
-Authority Level: Engine Governance (Binding)  
-Status: ✅ BINDING | ✅ NON-OPTIONAL  
+Engine Key: {ENGINE_CODE}
+Engine Role: TRUTH_ENGINE | TRUTH_ADJACENT_COMPUTE | FUSION_ENGINE
+Authority Level: Engine Governance (Binding)
+Status: ✅ BINDING | ✅ NON-OPTIONAL
 
-## 1. Authority & Inheritance
+## 1. Governance Inheritance
 
-THERMOS inherits CORE law and may not override it.
+This engine is permanently subordinate to CORE platform law.
 
-## 2. Scope
+Inherited base governance:
+- TRUTH_ENGINE_BASE_GOVERNANCE.md (or applicable base)
+- CORE_CONSTITUTIONAL_STOP_LAYER.md
+- CORE_PLATFORM_CONSTITUTION.md
+- CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md
+- CORE_EXPERIMENT_INTEGRITY_AND_REPRODUCIBILITY_LAW.md
+- CORE_TENANT_BOUNDARY_AND_DATA_SEPARATION_LAW.md
 
-THERMOS models thermal behavior:
-- diffusion, convection, radiative transfer
-- temperature fields and gradients
-- heat flux
-- thermal expansion stress indicators
-- coupling inputs from other engines (declared only)
+If any conflict exists → CORE law prevails immediately.
 
-## 3. Non-Scope
+## 2. Engine Scope
 
-THERMOS may NOT:
-- claim medical safety thresholds
-- infer biological outcomes
-- access data outside authorized run scope
+(Engine-specific physics scope only.)
 
-## 4. Determinism
+## 3. Explicit Non-Scope
 
-THERMOS must log:
-- material properties
-- boundary conditions
-- solver parameters
-- timestep and tolerance configs
+What this engine **cannot** do (medical, classification, surveillance, etc.).
 
-## 5. Required Artifacts
+## 4. Execution & Determinism
 
-- `ENGINE_MANIFEST.json`
-- `RUN_CONDITIONS.json`
-- `SHA256SUMS.txt`
-- `TEMPERATURE_FIELD.json`
-- `GRADIENTS.json`
-- `HEAT_FLUX.json`
-- `EXPANSION_STRESS.json` (if computed)
-- `ARTIFACT_INDEX.json`
+- Deterministic execution required
+- No network access
+- Inputs delivered by CORE runtime only
+- Outputs returned to CORE only
+- No post-seal mutation
 
-## 6. Safety & Misuse Controls
+## 5. Artifacts & Sealing Expectations
 
-THERMOS outputs must:
-- include uncertainty or tolerance declarations
-- require vertical-lens routing for regulated interpretations
+Reference:
+- RUN_BUNDLE_SPEC.md
+- SEALING_SPEC.md
 
-## 7. Publishing Rules
+Engine emits schema-valid outputs only.
 
-Sealed run required.
+## 6. Coupling Semantics
 
-## 8. Amendments
+- No peer delivery
+- No implicit coupling
+- CORE mediates all data flow
+- Coupling rules are declarative, not executable
 
-Governance review required.
+## 7. Prohibited Use
+
+Explicit list.
+
+## 8. Change Control
+
+Manifest + registry update required.
+
+## 9. Declaration
+
+This engine emits physics truth only.
+Meaning and action are applied by CORE lenses.
