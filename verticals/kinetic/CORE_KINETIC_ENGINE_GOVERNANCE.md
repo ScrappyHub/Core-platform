@@ -1,56 +1,78 @@
-# 🧱 CORE ENGINE — KINETIC GOVERNANCE (CANONICAL)
+# CORE ENGINE — KINETIC GOVERNANCE (CANONICAL)
 
-File: `verticals/kinetic/CORE_KINETIC_ENGINE_GOVERNANCE.md`  
-Engine Key: **KINETIC**  
+Engine Key: KINETIC  
+Engine Role: TRUTH_ENGINE  
 Authority Level: Engine Governance (Binding)  
 Status: ✅ BINDING | ✅ NON-OPTIONAL  
 
-## 1. Authority & Inheritance
+## 1. Governance Inheritance
 
-KINETIC inherits CORE law and registry contract.
+Inherited base governance:
+- TRUTH_ENGINE_BASE_GOVERNANCE.md
 
-## 2. Scope
+Inherited CORE law:
+- CORE_CONSTITUTIONAL_STOP_LAYER.md
+- CORE_PLATFORM_CONSTITUTION.md
+- CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md
+- CORE_GOVERNANCE_INDEX_CHAIN_OF_AUTHORITY.md
+- CORE_EXPERIMENT_INTEGRITY_AND_REPRODUCIBILITY_LAW.md
+- CORE_TENANT_BOUNDARY_AND_DATA_SEPARATION_LAW.md
+- CORE_TELEMETRY_OBSERVABILITY_CONSENT_LAW.md
+- CORE_SENSOR_IO_SAFETY_AND_MISUSE_PREVENTION_LAW.md
 
-KINETIC models structural mechanics:
-- stress/strain fields
-- deformation and displacement
-- modal vibration and damping
-- resonance energy transfer
-- failure risk indicators (derived only)
+If any conflict exists → CORE law prevails immediately.
 
-## 3. Non-Scope
+## 2. Engine Scope
 
-KINETIC may NOT:
-- act as an engineering sign-off authority
-- make safety guarantees
-- bypass CORE publishing permissions
+KINETIC computes structural and mechanical physics outputs:
+- stress/strain fields (as modeled)
+- vibration modes and damping behavior
+- deformation and failure-signature primitives (CAP_STRUCTURAL_FAILURE_SIGNATURES)
+- motion-related quantities where modeled (CAP_MOVING_OBJECT_SPEED)
 
-## 4. Determinism
+## 3. Explicit Non-Scope
 
-Must log geometry, materials, force/excitation sets, and solver configs.
+KINETIC cannot:
+- declare “safe/unsafe”, “pass/fail”, “code compliant”, or legal conclusions
+- classify objects, threats, or intent
+- manage identity, permissions, tiers, billing, feature flags, or governance state
 
-## 5. Required Artifacts
+## 4. Execution & Determinism
 
-- `ENGINE_MANIFEST.json`
-- `RUN_CONDITIONS.json`
-- `SHA256SUMS.txt`
-- `DEFORMATION_FIELD.json`
-- `MODE_SHAPES.json`
-- `STRESS_STRAIN.json`
-- `DAMPING_REPORT.json`
-- `ARTIFACT_INDEX.json`
+- Deterministic execution required.
+- No network access.
+- Inputs delivered by CORE runtime only.
+- Outputs returned to CORE only.
+- No post-seal mutation.
 
-## 6. Safety & Misuse Controls
+## 5. Artifacts & Sealing Expectations
 
-Outputs must clearly label:
-- modeled vs measured data
-- limits and assumptions
-- lack of regulatory certification
+References:
+- governance/RUN_BUNDLE_SPEC.md
+- governance/UNITS_AND_CONVERSIONS.md
+- governance/PHYSICS_CAPABILITY_MATRIX.md
+- Engine repo SEALING/SEALING_SPEC.md and schemas
 
-## 7. Publishing Rules
+Engine emits schema-valid outputs only; CORE seals.
 
-Sealed run required.
+## 6. Coupling Semantics
 
-## 8. Amendments
+- No peer delivery.
+- CORE mediates all cross-engine data flow.
+- COUPLING_RULES.json is declarative.
 
-Governance review required.
+## 7. Prohibited Use
+
+- weaponization, targeting, operational directives
+- identity inference or user profiling
+- modification of sealed artifacts
+- classification claims (missile/rocket/submarine/etc.)
+
+## 8. Change Control
+
+Manifest + registry update required.
+
+## 9. Declaration
+
+KINETIC emits mechanical physics truth only.
+Meaning and action are applied by CORE lenses, never KINETIC.
