@@ -1,160 +1,90 @@
-# 🧬 CORE — RGSR ENGINE GOVERNANCE (CANONICAL)
+# CORE ENGINE — RGSR GOVERNANCE (CANONICAL)
 
-Engine: RGSR (Resonant Geophysical Systems Research)  
-Authority Level: Engine-Level Governance Law  
-Parent Platform: CORE  
-Effective Date: First RGSR Public Deployment  
+Engine Key: RGSR  
+Engine Role: FUSION_ENGINE  
+Authority Level: Engine Governance (Binding)  
+Status: ✅ BINDING | ✅ NON-OPTIONAL  
 
----
+## 1. Governance Inheritance
 
-## 🧠 ENGINE IDENTITY
+Inherited base governance:
+- FUSION_ENGINE_BASE_GOVERNANCE.md
 
-RGSR is a multi-domain physics fusion engine.
-
-RGSR is NOT:
-- A simulator
-- A SaaS dashboard
-- A consumer application
-- A single-domain solver
-
-RGSR is a **distributed scientific instrument platform**.
-
----
-
-## ⚖️ GOVERNANCE INHERITANCE (BINDING)
-
-RGSR is permanently governed by, and subordinate to:
-
-1. CORE_CONSTITUTIONAL_STOP_LAYER.md  
-2. CORE_PLATFORM_CONSTITUTION.md  
-3. CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md  
-4. CORE_GOVERNANCE_INDEX_CHAIN_OF_AUTHORITY.md  
-
-No RGSR subsystem may override these authorities.
-
----
-
-## 🧱 RGSR FOUR-LAYER ARCHITECTURE (LOCKED)
-
-### Layer 1 — Physics Core
-
-Governed by:
-- CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md
-
-Properties:
-- Deterministic
-- Headless
-- Scriptable
-- No authentication
-- No network access
-- Cryptographically verifiable
-
-Produces immutable artifacts:
-- RUN_CONDITIONS.json
-- SHA256SUMS.txt
-- FFT outputs
-- Peak sets
-- Perturbation deltas
-
----
-
-### Layer 2 — RGSR Workbench (Local Instrument)
-
-Governed by:
-- CORE_PLATFORM_CONSTITUTION.md
-
-Responsibilities:
-- Project control
-- Visualization
-- Local role enforcement
-- Artifact signing
-- Feature flag compliance
-
-No global identity authority exists here.
-
----
-
-### Layer 3 — Cloud Coordination Ledger
-
-Governed by:
-- CORE_PLATFORM_CONSTITUTION.md
-- CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md
-
-Responsibilities:
-- Artifact storage
-- Hash verification
-- Immutable run locking
-- Replication & peer review
-- Audit logging
-
----
-
-### Layer 4 — Governance & Distribution
-
-Governed by:
+Inherited CORE law:
 - CORE_CONSTITUTIONAL_STOP_LAYER.md
 - CORE_PLATFORM_CONSTITUTION.md
+- CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md
+- CORE_GOVERNANCE_INDEX_CHAIN_OF_AUTHORITY.md
+- CORE_EXPERIMENT_INTEGRITY_AND_REPRODUCIBILITY_LAW.md
+- CORE_TENANT_BOUNDARY_AND_DATA_SEPARATION_LAW.md
+- CORE_TELEMETRY_OBSERVABILITY_CONSENT_LAW.md
+- CORE_SENSOR_IO_SAFETY_AND_MISUSE_PREVENTION_LAW.md
 
-Responsibilities:
-- Identity integration
-- Role enforcement
-- Publication approval
-- Moderation
-- Safety & misuse prevention
+If any conflict exists → CORE law prevails immediately.
 
----
+## 2. Engine Scope
 
-## 🧭 CANONICAL ROLE MODEL (CORE-COMPATIBLE)
+RGSR performs correlation-only fusion:
+- cross-engine coherence mapping
+- relationship structure extraction
+- alignment of sealed upstream artifacts into a correlation surface (CAP_FUSION_CORRELATION)
 
-| Role | Run | Publish | View Others | Modify Profiles |
-|----|----|----|----|----|
-| Observer | ❌ | ❌ | Public | ❌ |
-| Researcher | ✅ | ❌ | Limited | ❌ |
-| Scientist | ✅ | ✅ | Peer | ❌ |
-| Lab Admin | ✅ | ✅ | Lab | ✅ |
-| Platform Admin | ✅ | ✅ | All | ✅ |
+RGSR must never be treated as a physics authority.
 
-All role actions are:
-- Logged
-- Audited
-- Revocable
+## 3. Explicit Non-Scope
 
----
+RGSR cannot:
+- generate new physics (no solver authority)
+- claim causation, intent, attribution, or agency
+- classify events or objects (missile/rocket/submarine/tsunami/etc.)
+- manage identity, permissions, tiers, billing, feature flags, or governance state
 
-## 🔒 DATA & ARTIFACT RULES
+## 4. Execution & Determinism
 
-- Runs are immutable once sealed
-- Artifacts are cryptographically verified
-- Reproducibility is mandatory
-- Silent modification is forbidden
-- Export requires permission
+- Deterministic execution required.
+- No network access.
+- Inputs delivered by CORE runtime only.
+- Outputs returned to CORE only.
+- No post-seal mutation.
+- If any probabilistic methods exist, they MUST be deterministic via fixed seeds and sealed parameters so identical inputs replay identically.
 
----
+## 5. Artifacts & Sealing Expectations
 
-## 🛑 PROHIBITED USE
+References:
+- governance/RUN_BUNDLE_SPEC.md
+- governance/UNITS_AND_CONVERSIONS.md
+- governance/PHYSICS_CAPABILITY_MATRIX.md
+- Engine repo SEALING/SEALING_SPEC.md and schemas
 
-RGSR may not be used for:
-- Data falsification
-- Covert surveillance
-- Weaponization
-- Unreviewed public claims
-- Manipulation of results
+Hard requirements:
+- RGSR outputs MUST declare CORRELATION_ONLY semantics.
+- RGSR outputs MUST include a hash-referenced upstream artifact list (input_artifact_index or equivalent).
+- Engine emits schema-valid outputs only; CORE seals.
 
-Violations trigger enforcement under:
-- CORE_CONSTITUTIONAL_STOP_LAYER.md
+## 6. Coupling Semantics
 
----
+- No peer delivery.
+- CORE mediates all cross-engine data flow.
+- COUPLING_RULES.json is declarative.
+- direct_engine_to_engine_calls is always false.
 
-## 🧾 GIT-LOCKED AUTHORITY
+## 7. Prohibited Use
 
-If a rule is not written in CORE governance files →  
-it has no authority over RGSR.
+- causation or attribution claims
+- surveillance determinations or targeting
+- weaponization, operational directives
+- identity inference or user profiling
+- modification of sealed artifacts
+- classification claims (missile/rocket/submarine/etc.)
 
----
+## 8. Change Control
 
-## ✅ RATIFICATION
+Any change impacting fusion scope, provenance requirements, or artifact expectations requires:
+- base governance compliance review
+- manifest + registry update
+- Git audit record
 
-Ratified by:
-- CORE_VERTICAL_REGISTRY.md  
-- CORE_PLATFORM_CONSTITUTION.md  
-- CORE_CONSTITUTIONAL_STOP_LAYER.md  
+## 9. Declaration
+
+RGSR emits correlation structure only.
+Meaning and action are applied by CORE lenses, never RGSR.
