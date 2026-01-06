@@ -1,52 +1,79 @@
-# 🌬 CORE ENGINE — ATMOS GOVERNANCE (CANONICAL)
+# CORE ENGINE — ATMOS GOVERNANCE (CANONICAL)
 
-File: `verticals/atmos/CORE_ATMOS_ENGINE_GOVERNANCE.md`  
-Engine Key: **ATMOS**  
+Engine Key: ATMOS  
+Engine Role: TRUTH_ENGINE  
 Authority Level: Engine Governance (Binding)  
 Status: ✅ BINDING | ✅ NON-OPTIONAL  
 
-## 1. Authority & Inheritance
+## 1. Governance Inheritance
 
-ATMOS inherits CORE governance.
+Inherited base governance:
+- TRUTH_ENGINE_BASE_GOVERNANCE.md
 
-## 2. Scope
+Inherited CORE law:
+- CORE_CONSTITUTIONAL_STOP_LAYER.md
+- CORE_PLATFORM_CONSTITUTION.md
+- CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md
+- CORE_GOVERNANCE_INDEX_CHAIN_OF_AUTHORITY.md
+- CORE_EXPERIMENT_INTEGRITY_AND_REPRODUCIBILITY_LAW.md
+- CORE_TENANT_BOUNDARY_AND_DATA_SEPARATION_LAW.md
+- CORE_TELEMETRY_OBSERVABILITY_CONSENT_LAW.md
+- CORE_SENSOR_IO_SAFETY_AND_MISUSE_PREVENTION_LAW.md
 
-ATMOS models atmospheric behavior:
-- gas density and wave speed effects
-- humidity, pressure, temperature coupling
-- ionization indicators (where declared)
-- EM-air interaction parameters (where declared)
+If any conflict exists → CORE law prevails immediately.
 
-## 3. Non-Scope
+## 2. Engine Scope
 
-ATMOS may NOT:
-- function as a forecasting product
-- claim regulatory or safety compliance outcomes
-- access other engines’ data without CORE mediation
+ATMOS computes atmospheric physics outputs (capability-aligned):
+- wind speed fields (CAP_WIND_SPEED)
+- rain rate outputs (CAP_RAIN_RATE)
+- snow rate outputs (CAP_SNOW_RATE, SWE-tagged)
+- hurricane coupling primitives (CAP_HURRICANE_COUPLING)
+- geometry-dependent scaling controls where applicable (CAP_DISTANCE_SCALING)
 
-## 4. Determinism
+## 3. Explicit Non-Scope
 
-Must log all environmental parameter sets and solver configs.
+ATMOS cannot:
+- declare “storm category”, “impact”, “danger”, or other policy meaning
+- classify events as disasters or threats
+- manage identity, permissions, tiers, billing, feature flags, or governance state
 
-## 5. Required Artifacts
+## 4. Execution & Determinism
 
-- `ENGINE_MANIFEST.json`
-- `RUN_CONDITIONS.json`
-- `SHA256SUMS.txt`
-- `ATMOS_STATE.json`
-- `DENSITY_FIELD.json`
-- `WAVE_SPEED_REPORT.json`
-- `IONIZATION_REPORT.json` (if computed)
-- `ARTIFACT_INDEX.json`
+- Deterministic execution required.
+- No network access.
+- Inputs delivered by CORE runtime only.
+- Outputs returned to CORE only.
+- No post-seal mutation.
 
-## 6. Safety & Misuse Controls
+## 5. Artifacts & Sealing Expectations
 
-Outputs must be labeled as modeled/derived, not “observed truth” unless sensor-fed via CORE.
+References:
+- governance/RUN_BUNDLE_SPEC.md
+- governance/UNITS_AND_CONVERSIONS.md
+- governance/PHYSICS_CAPABILITY_MATRIX.md
+- Engine repo SEALING/SEALING_SPEC.md and schemas
 
-## 7. Publishing Rules
+Engine emits schema-valid outputs only; CORE seals.
 
-Sealed run required.
+## 6. Coupling Semantics
 
-## 8. Amendments
+- No peer delivery.
+- CORE mediates all cross-engine data flow.
+- COUPLING_RULES.json is declarative.
 
-Governance review required.
+## 7. Prohibited Use
+
+- weaponization, targeting, operational directives
+- identity inference or user profiling
+- modification of sealed artifacts
+- classification claims (missile/rocket/submarine/etc.)
+
+## 8. Change Control
+
+Manifest + registry update required.
+
+## 9. Declaration
+
+ATMOS emits atmospheric physics truth only.
+Meaning and action are applied by CORE lenses, never ATMOS.
