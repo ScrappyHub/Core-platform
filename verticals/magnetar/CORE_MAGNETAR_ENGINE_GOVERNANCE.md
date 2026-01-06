@@ -67,4 +67,14 @@ Engine emits schema-valid outputs only; CORE seals.
 - covert monitoring / surveillance determinations
 - weaponization, targeting, operational directives
 - identity inference or user profiling
-- modificatio
+- modification of sealed artifacts
+- classification claims (missile/rocket/submarine/etc.)
+
+## 8. Change Control
+
+Manifest + registry update required.
+
+## 9. Declaration
+
+MAGNETAR emits electromagnetic physics truth only.
+Meaning and action are applied by CORE lenses, never MAGNETAR.
