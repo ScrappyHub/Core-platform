@@ -1,52 +1,78 @@
-# 💎 CORE ENGINE — CRYSTAL GOVERNANCE (CANONICAL)
+# CORE ENGINE — CRYSTAL GOVERNANCE (CANONICAL)
 
-File: `verticals/crystal/CORE_CRYSTAL_ENGINE_GOVERNANCE.md`  
-Engine Key: **CRYSTAL**  
+Engine Key: CRYSTAL  
+Engine Role: TRUTH_ENGINE  
 Authority Level: Engine Governance (Binding)  
 Status: ✅ BINDING | ✅ NON-OPTIONAL  
 
-## 1. Authority & Inheritance
+## 1. Governance Inheritance
 
-CRYSTAL inherits CORE governance and registry contract.
+Inherited base governance:
+- TRUTH_ENGINE_BASE_GOVERNANCE.md
 
-## 2. Scope
+Inherited CORE law:
+- CORE_CONSTITUTIONAL_STOP_LAYER.md
+- CORE_PLATFORM_CONSTITUTION.md
+- CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md
+- CORE_GOVERNANCE_INDEX_CHAIN_OF_AUTHORITY.md
+- CORE_EXPERIMENT_INTEGRITY_AND_REPRODUCIBILITY_LAW.md
+- CORE_TENANT_BOUNDARY_AND_DATA_SEPARATION_LAW.md
+- CORE_TELEMETRY_OBSERVABILITY_CONSENT_LAW.md
+- CORE_SENSOR_IO_SAFETY_AND_MISUSE_PREVENTION_LAW.md
 
-CRYSTAL models lattice/molecular behavior:
-- phonon modes and resonant shifts
-- frequency-dependent material response
-- piezoelectric charge indicators (where declared)
-- coupling parameters to EM/acoustic (declared only)
+If any conflict exists → CORE law prevails immediately.
 
-## 3. Non-Scope
+## 2. Engine Scope
 
-CRYSTAL may NOT:
-- claim medical outcomes
-- infer identity or cross-tenant data
-- bypass artifact sealing
+CRYSTAL computes lattice and molecular-scale physics outputs:
+- lattice vibration / phonon-related primitives (CAP_CRYSTAL_RESONANCE)
+- frequency-dependent resonance shifts (as modeled)
+- piezoelectric response primitives (as modeled)
 
-## 4. Determinism
+## 3. Explicit Non-Scope
 
-Material libraries, constants, and models must be versioned and logged.
+CRYSTAL cannot:
+- produce medical/clinical claims or treatment guidance
+- classify substances as safe/unsafe
+- manage identity, permissions, tiers, billing, feature flags, or governance state
 
-## 5. Required Artifacts
+## 4. Execution & Determinism
 
-- `ENGINE_MANIFEST.json`
-- `RUN_CONDITIONS.json`
-- `SHA256SUMS.txt`
-- `LATTICE_MODES.json`
-- `FREQUENCY_SHIFTS.json`
-- `PIEZOELECTRIC_REPORT.json` (if computed)
-- `MATERIAL_RESPONSE.json`
-- `ARTIFACT_INDEX.json`
+- Deterministic execution required.
+- No network access.
+- Inputs delivered by CORE runtime only.
+- Outputs returned to CORE only.
+- No post-seal mutation.
 
-## 6. Safety & Misuse Controls
+## 5. Artifacts & Sealing Expectations
 
-Outputs must label limitations and uncertainty.
+References:
+- governance/RUN_BUNDLE_SPEC.md
+- governance/UNITS_AND_CONVERSIONS.md
+- governance/PHYSICS_CAPABILITY_MATRIX.md
+- Engine repo SEALING/SEALING_SPEC.md and schemas
 
-## 7. Publishing Rules
+Engine emits schema-valid outputs only; CORE seals.
 
-Sealed run required.
+## 6. Coupling Semantics
 
-## 8. Amendments
+- No peer delivery.
+- CORE mediates all cross-engine data flow.
+- COUPLING_RULES.json is declarative.
 
-Governance review required.
+## 7. Prohibited Use
+
+- medical/clinical directives
+- weaponization, targeting, operational directives
+- identity inference or user profiling
+- modification of sealed artifacts
+- classification claims (missile/rocket/submarine/etc.)
+
+## 8. Change Control
+
+Manifest + registry update required.
+
+## 9. Declaration
+
+CRYSTAL emits lattice physics truth only.
+Meaning and action are applied by CORE lenses, never CRYSTAL.
