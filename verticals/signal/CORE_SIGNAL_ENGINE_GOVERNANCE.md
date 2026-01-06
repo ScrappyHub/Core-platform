@@ -1,63 +1,79 @@
-# 🧠 CORE ENGINE — SIGNAL GOVERNANCE (CANONICAL)
+# CORE ENGINE — SIGNAL GOVERNANCE (CANONICAL)
 
-File: `verticals/signal/CORE_SIGNAL_ENGINE_GOVERNANCE.md`  
-Engine Key: **SIGNAL**  
+Engine Key: SIGNAL  
+Engine Role: TRUTH_ADJACENT_COMPUTE  
 Authority Level: Engine Governance (Binding)  
 Status: ✅ BINDING | ✅ NON-OPTIONAL  
 
-## 1. Authority & Inheritance
+## 1. Governance Inheritance
 
-SIGNAL inherits CORE governance and registry contract.
+Inherited base governance:
+- TRUTH_ADJACENT_BASE_GOVERNANCE.md
 
-## 2. Scope
+Inherited CORE law:
+- CORE_CONSTITUTIONAL_STOP_LAYER.md
+- CORE_PLATFORM_CONSTITUTION.md
+- CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md
+- CORE_GOVERNANCE_INDEX_CHAIN_OF_AUTHORITY.md
+- CORE_EXPERIMENT_INTEGRITY_AND_REPRODUCIBILITY_LAW.md
+- CORE_TENANT_BOUNDARY_AND_DATA_SEPARATION_LAW.md
+- CORE_TELEMETRY_OBSERVABILITY_CONSENT_LAW.md
+- CORE_SENSOR_IO_SAFETY_AND_MISUSE_PREVENTION_LAW.md
 
-SIGNAL performs signal processing and inference metrics:
-- FFT and spectral feature extraction
-- cross-correlation and coherence
-- phase locking metrics
-- anomaly detection (statistical)
-- confidence scoring of declared inputs
+If any conflict exists → CORE law prevails immediately.
 
-SIGNAL may ingest data only if explicitly provided via CORE-managed contracts.
+## 2. Engine Scope
 
-## 3. Non-Scope
+SIGNAL performs deterministic transforms on provided signals:
+- FFT and spectral transforms (CAP_SIGNAL_TRANSFORMS)
+- correlation and coherence primitives
+- filtering, windowing, and deterministic feature extraction
 
-SIGNAL may NOT:
-- invent missing sensor data
-- perform cross-tenant inference
-- label outputs as “ground truth” beyond computed metrics
-- bypass registry gating and publish permissions
+## 3. Explicit Non-Scope
 
-## 4. Determinism
+SIGNAL cannot:
+- generate new physics truth claims (no solver authority)
+- claim causation, intent, or attribution
+- classify objects or threats
+- manage identity, permissions, tiers, billing, feature flags, or governance state
 
-All pipelines must be reproducible given:
-- exact inputs
-- exact engine release identity
-- exact parameterization
+## 4. Execution & Determinism
 
-## 5. Required Artifacts
+- Deterministic execution required.
+- No network access.
+- Inputs delivered by CORE runtime only.
+- Outputs returned to CORE only.
+- No post-seal mutation.
 
-- `ENGINE_MANIFEST.json`
-- `RUN_CONDITIONS.json`
-- `SHA256SUMS.txt`
-- `SPECTRAL_FEATURES.json`
-- `COHERENCE_REPORT.json`
-- `PHASE_LOCKING.json`
-- `ANOMALY_REPORT.json`
-- `CONFIDENCE.json`
-- `ARTIFACT_INDEX.json`
+## 5. Artifacts & Sealing Expectations
 
-## 6. Safety & Misuse Controls
+References:
+- governance/RUN_BUNDLE_SPEC.md
+- governance/UNITS_AND_CONVERSIONS.md
+- governance/PHYSICS_CAPABILITY_MATRIX.md
+- Engine repo SEALING/SEALING_SPEC.md and schemas
 
-SIGNAL must:
-- label confidence bounds
-- record thresholds used
-- prevent misuse as “proof” without traceable upstream artifacts
+Engine emits schema-valid outputs only; CORE seals.
 
-## 7. Publishing Rules
+## 6. Coupling Semantics
 
-Sealed runs required. Exports must include hashes + manifest.
+- No peer delivery.
+- CORE mediates all cross-engine data flow.
+- COUPLING_RULES.json is declarative.
 
-## 8. Amendments
+## 7. Prohibited Use
 
-Governance review required.
+- surveillance determinations or targeting
+- weaponization, operational directives
+- identity inference or user profiling
+- modification of sealed artifacts
+- classification claims (missile/rocket/submarine/etc.)
+
+## 8. Change Control
+
+Manifest + registry update required.
+
+## 9. Declaration
+
+SIGNAL emits deterministic transform outputs only.
+Meaning and action are applied by CORE lenses, never SIGNAL.
