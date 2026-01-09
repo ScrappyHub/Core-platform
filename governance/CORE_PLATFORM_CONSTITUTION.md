@@ -1,154 +1,117 @@
 # 📜 CORE PLATFORM CONSTITUTION (CANONICAL)
 
 Authority Level: SUPREME PLATFORM LAW  
-Enforcement Chain: GitHub → Systems (DB/RLS/Policies + Services) → Admin RPCs → UI  
 Protected By: CORE Constitutional Stop Layer  
+Enforcement: Git Governance → System Enforcement (DB/RLS/Policies/Services) → Audit-Logged Admin RPCs → UI  
 
-This Constitution defines:
-
-- CORE identity and scope
-- CORE ethical boundaries
-- CORE power limits
-- CORE curation & hosting doctrine
-- CORE anti-profiling and non-extractive infrastructure rules
-- CORE contributor enforcement expectations
-
-If anything conflicts with this Constitution → this Constitution wins,  
-unless the Stop Layer overrides it.
+If any behavior or document conflicts with this Constitution, this Constitution wins—unless the Stop Layer overrides it.
 
 Cross-Reference:
-- `CORE_CONSTITUTIONAL_STOP_LAYER.md`
-- `CORE_GOVERNANCE_INDEX_CHAIN_OF_AUTHORITY.md`
+- CORE_CONSTITUTIONAL_STOP_LAYER.md
+- CORE_GOVERNANCE_INDEX_CHAIN_OF_AUTHORITY.md
 
 ---
 
-## 🧭 CORE IDENTITY
+## 1) CORE IDENTITY
 
-CORE is a governed meta-infrastructure business that provides:
+CORE is governed meta-infrastructure that provides:
 
-- Platform tooling
-- Compliance & governance frameworks
-- Trust-first operational primitives
-- Curated enablement (what CORE will support/host/ship)
+- Project/workspace isolation (tenant boundaries)
+- Engine registration and lifecycle control
+- Deterministic execution orchestration
+- Artifact storage, sealing, replay, and verification
+- Access control, entitlements, and quotas
+- Audit logging and compliance enforcement
+- Curated enablement: what CORE will host/support/ship
 
-CORE does not sell identity access, does not run surveillance capitalism,
-and does not permit hidden policy changes.
-
----
-
-## 🧾 GIT-LOCKED SOVEREIGNTY
-
-If a rule is not in GitHub governance files → it has **no legal standing** inside CORE.
-
-All enforceable authority must live in:
-
-- GitHub governance files
-- Governed policy definitions (RLS/policies where applicable)
-- Canonical service enforcement rules
-- Audit-logged admin RPCs
+CORE is not a surveillance platform, not an ad-tech platform, and not an identity monetization business.
 
 ---
 
-## ⚙️ NO UNLIMITED POWER
+## 2) GIT-LOCKED SOVEREIGNTY
 
-No admin, founder, developer, contractor, service account, or system may bypass governance.
+A rule has authority inside CORE only if it is written in Git-governed law files (or enforced system policies derived from them).
 
-Power must always be:
-
-✅ Logged  
-✅ Audited  
-✅ Role-scoped  
-✅ Time-bounded where possible  
-✅ Reversible where possible  
-
-Cross-Reference:
-- `CORE_CONSTITUTIONAL_STOP_LAYER.md`
-- `CORE_FOUNDER_PROTECTION_AND_SUCCESSION.md`
+No silent policy changes exist.  
+No UI behavior overrides law.  
+No undocumented “operational exceptions” exist.
 
 ---
 
-## 🚫 ANTI-PROFILING & NON-IDENTITY SORTING LAW
+## 3) NO UNLIMITED POWER
 
-CORE prohibits profiling, ranking, targeting, or discovery sorting by:
+No founder, admin, developer, contractor, service account, or system actor may bypass governance.
 
-- Race
-- Ethnicity / national origin
-- Skin color
+All privileged power must be:
+- Logged (append-only)
+- Attributed to an identity
+- Role-scoped
+- Reviewable
+- Revocable where possible
+
+---
+
+## 4) ANTI-PROFILING & NON-EXTRACTIVE DOCTRINE
+
+CORE prohibits profiling, ranking, targeting, or discovery sorting by protected attributes, including but not limited to:
+- Race, ethnicity, national origin, skin color
 - Religion
 - Political belief
-- Gender identity
-- Sexual orientation
-- Immigration status
-- Family structure
-- Disability
+- Gender identity, sexual orientation
+- Immigration status, disability, family structure
 
-✅ Never required  
-✅ Never inferred  
-✅ Never ranked  
-✅ Never targeted  
-
-CORE may provide tools for **safety**, **compliance**, and **consent** —  
-not identity exploitation.
+CORE may support safety and compliance tools, but never identity exploitation.
 
 ---
 
-## 🧠 CONSENT-FIRST DATA DOCTRINE
+## 5) CONSENT-FIRST DATA DOCTRINE
 
 CORE must not introduce:
-
 - Invisible tracking
 - Fingerprinting
 - Shadow analytics
-- Third-party data resale paths
+- Third-party resale paths
 
-Any analytics or telemetry must be:
-
-✅ Explicitly disclosed  
-✅ Consent-gated (where applicable)  
-✅ Minimal and purpose-bound  
-✅ Auditable and removable  
+Telemetry/analytics, if any, must be:
+- Explicitly disclosed
+- Purpose-bound and minimal
+- Consent-gated where applicable
+- Auditable and removable
 
 ---
 
-## 🧱 CURATION & ENABLEMENT DOCTRINE
+## 6) CURATION & ENABLEMENT DOCTRINE
 
-CORE may refuse to host, enable, or support systems that require:
-
+CORE may refuse to host/enable/support systems that require:
 - Surveillance capitalism
 - Demographic targeting
-- Ad-tech extraction
 - Dark patterns
-- Monetization that relies on harm, coercion, or unsafe users
+- Monetization dependent on harm, coercion, or unsafe use
 
-CORE is permitted to curate and enforce its standards as a condition of participation.
-
-(Platform-specific curation rules can be added as canonical appendices.)
+Participation is conditional on compliance with CORE law.
 
 ---
 
-## 🛑 GOVERNANCE-BREAKING EVENT
+## 7) GOVERNANCE-BREAKING EVENT
 
 Any attempt to:
-
 - Disable governance enforcement
-- Introduce shadow power
-- Add profiling fields
-- Add silent tracking
-- Rewrite law without Git record
+- Add shadow power or hidden privileges
+- Add profiling fields/pipelines
+- Add hidden tracking
+- Modify law without Git history
 
 …is a Governance-Breaking Event and triggers:
-
 - Immediate rollback where possible
 - Privilege revocation
 - Forensic audit
-- Permanent record in governance logs
+- Permanent audit record
 
 ---
 
 ## ✅ RATIFICATION
 
 Ratified by:
-
-- CORE Founder
-- CORE Governance Framework
+- CORE Constitutional Stop Layer
+- CORE Governance Index Chain of Authority
 - First Public Deployment
