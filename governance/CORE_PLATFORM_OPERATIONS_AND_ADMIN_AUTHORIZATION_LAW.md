@@ -1,200 +1,153 @@
 # 🛠 CORE — PLATFORM OPERATIONS & ADMIN AUTHORIZATION LAW (CANONICAL)
 
 Authority Level: Binding Platform Law  
-Enforcement Chain (Non-Negotiable):
-
-1. CORE_CONSTITUTIONAL_STOP_LAYER.md  
-2. CORE_PLATFORM_CONSTITUTION.md  
-3. CORE_PLATFORM_OPERATIONS_AND_ADMIN_AUTHORIZATION_LAW.md  
-4. CORE_GOVERNANCE_INDEX_CHAIN_OF_AUTHORITY.md  
-5. CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md  
-6. CORE_TENANT_BOUNDARY_AND_DATA_SEPARATION_LAW.md  
-7. Admin RPCs, audit logs, feature flags  
-8. UI and operational tooling  
-
 Effective Date: First Public CORE Deployment  
 
----
-
-## 🧠 PURPOSE
-
-This law defines **how CORE is operated**, without ever granting:
-
-- Unlimited power  
-- Silent overrides  
-- Emergency dictatorship  
-- Governance bypass  
-
-CORE operations must remain:
-
-✅ Law-bound  
-✅ Logged  
-✅ Auditable  
-✅ Revocable  
-
-This law applies to **all human and system actors** with elevated privileges.
+Enforcement Chain (Non-Negotiable):
+1. CORE_CONSTITUTIONAL_STOP_LAYER.md
+2. CORE_PLATFORM_CONSTITUTION.md
+3. CORE_PLATFORM_OPERATIONS_AND_ADMIN_AUTHORIZATION_LAW.md
+4. CORE_GOVERNANCE_INDEX_CHAIN_OF_AUTHORITY.md
+5. CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md
+6. CORE_TENANT_BOUNDARY_AND_DATA_SEPARATION_LAW.md
+7. Admin RPCs + Audit Logs + Feature Flags
+8. UI/Operational Tooling
 
 ---
 
-## 👤 ADMIN ROLE DEFINITIONS (CANONICAL)
+## 1) PURPOSE
 
-CORE recognizes the following administrative roles:
+This law defines how CORE is operated without ever granting:
+- Unlimited power
+- Silent overrides
+- Governance bypass
+- “Emergency dictatorship”
+
+All operations must remain:
+- Law-bound
+- Logged
+- Auditable
+- Reviewable
+- Revocable where possible
+
+---
+
+## 2) ADMIN ROLES (CANONICAL)
 
 ### Platform Admin
 May:
-- Manage users and roles
-- Manage projects and labs
-- Manage pricing tiers and entitlements
-- Approve or revoke publication eligibility
-- Suspend engines or accounts
-- Initiate incident response
+- Manage users/roles (through approved RPCs)
+- Manage workspaces/projects/labs
+- Manage entitlements and feature flags (through approved RPCs)
+- Suspend accounts/engines for safety/integrity
+- Initiate incident response actions defined by law
 
 May NOT:
 - Override governance law
-- Modify sealed experiments
 - Disable audit logging
-- Grant silent privileges
 - Bypass tenant boundaries
+- Modify sealed artifacts or sealed experiments
+- Grant hidden privileges
 
----
-
-### Governance Admin (Optional, if assigned)
+### Governance Admin (optional)
 May:
-- Propose governance changes via PR
-- Review compliance incidents
-- Coordinate audits
+- Propose governance changes via Git PR
+- Coordinate audits and compliance review
 
 May NOT:
 - Merge governance changes unilaterally
-- Operate outside GitHub governance workflow
+- Operate outside Git workflow
 
 ---
 
-## ⚙️ ADMIN ACTION CONSTRAINTS (ABSOLUTE)
+## 3) ADMIN ACTION CONSTRAINTS (ABSOLUTE)
 
-All admin actions that affect:
-
-- Access
-- Roles
-- Tiers
-- Entitlements
+All admin actions affecting:
+- Access, roles, tiers, entitlements
 - Engine availability
-- Publication status
+- Publication/export eligibility
 - Safety enforcement
 
 MUST be:
+- Executed via authorized admin RPCs
+- Logged to append-only audit tables
+- Timestamped and identity-attributed
+- Reviewable after the fact
 
-✅ Executed via authorized RPCs  
-✅ Logged to append-only audit tables  
-✅ Timestamped  
-✅ Attributed to an identity  
-✅ Reviewable after the fact  
-
-There are **no exceptions**.
+No exceptions.
 
 ---
 
-## 🧾 REQUIRED AUDIT RECORDS
+## 4) REQUIRED AUDIT RECORDS
 
-At minimum, CORE must record:
-
-- Admin identity
+At minimum:
+- Actor identity (human/system)
 - Action type
-- Target entity (user, project, engine, etc.)
+- Target entity (user/project/engine/etc.)
 - Before/after state (where applicable)
 - Timestamp
-- Reason / justification
+- Reason/justification
+- Correlation/incident id when applicable
 
-Audit logs may not be edited or deleted.
+Audit logs must be append-only and non-deletable.
 
 ---
 
-## 🚨 INCIDENT RESPONSE (CONTROLLED, NOT ABSOLUTE)
+## 5) INCIDENT RESPONSE (CONTROLLED)
 
-CORE permits **incident response actions** only when:
-
+Incident response is permitted only when:
 - Data integrity is at risk
 - Safety violations are detected
 - Legal obligations require action
 - Active misuse is occurring
 
-Permitted emergency actions:
-
+Permitted actions:
 - Temporary account suspension
 - Temporary engine suspension
 - Temporary feature disablement
 
-All emergency actions:
+All incident actions must be:
+- Logged
+- Reviewable
+- Reversible where possible
 
-- MUST be logged
-- MUST reference this law
-- MUST be reviewable
-- MUST be reversible unless prohibited by law
-
-Emergency response does **not** permit governance bypass.
+Incident response never grants governance bypass.
 
 ---
 
-## 🧱 ENGINE SUSPENSION & INVALIDATION
+## 6) ENGINE SUSPENSION & INVALIDATION
 
 CORE may suspend an engine if it:
-
 - Violates governance law
 - Emits unauthorized telemetry
-- Leaks data across boundaries
-- Enables misuse or unsafe operation
+- Breaks tenant boundaries
 - Fails integrity verification
+- Enables unsafe operation
 
 Suspension requires:
-
 - Audit record
-- Registry update
-- Governance review if permanent
+- Registry status update
+- Governance review for permanent decisions
 
 ---
 
-## 🔐 NO FOUNDER OR ADMIN EXCEPTION
+## 7) NO FOUNDER EXCEPTION
 
-The following are explicitly forbidden:
-
-❌ Founder override logic  
-❌ “Break glass” admin accounts  
-❌ Silent superuser roles  
-❌ Hidden escalation paths  
+Forbidden:
+- Founder override logic
+- “Break glass” superuser accounts
+- Hidden escalation paths
+- Silent superpowers
 
 The Founder is bound by the same operational law once deployed.
-
----
-
-## 🛑 PROHIBITED ACTIONS
-
-It is forbidden to:
-
-- Operate CORE without audit logging
-- Perform unlogged admin actions
-- Modify governance files outside GitHub
-- Suppress audit visibility
-- Grant “temporary” power without record
-
-Violations are enforced under:
-- CORE_CONSTITUTIONAL_STOP_LAYER.md
-
----
-
-## 🧾 GIT-LOCKED AUTHORITY
-
-Operational authority exists only as written in GitHub governance files.
-
-If an operational power is not documented here →  
-it does not exist inside CORE.
 
 ---
 
 ## ✅ RATIFICATION
 
 Ratified by:
-- CORE_CONSTITUTIONAL_STOP_LAYER.md  
-- CORE_PLATFORM_CONSTITUTION.md  
-- CORE_GOVERNANCE_INDEX_CHAIN_OF_AUTHORITY.md  
-- CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md  
-- CORE_TENANT_BOUNDARY_AND_DATA_SEPARATION_LAW.md  
+- CORE_CONSTITUTIONAL_STOP_LAYER.md
+- CORE_PLATFORM_CONSTITUTION.md
+- CORE_GOVERNANCE_INDEX_CHAIN_OF_AUTHORITY.md
+- CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md
+- CORE_TENANT_BOUNDARY_AND_DATA_SEPARATION_LAW.md
