@@ -1,37 +1,32 @@
 # 🧬 CORE — CONSTITUTIONAL STOP LAYER (ABSOLUTE)
 
 Authority Level: ABSOLUTE  
-Enforcement: Constitution → Systems Enforcement (Policy/RLS/Service Rules) → Admin Oversight → UI  
 Effective Date: First Public Launch  
 
-This document defines the highest possible authority inside CORE.
+Enforcement: Stop Layer → Constitution → System Enforcement (DB/RLS/Services) → Admin Oversight → UI
 
-If ANY file, feature, service behavior, admin action, monetization rule, partnership,
-or investor pressure conflicts with this Stop Layer:
-
-👉 THIS LAYER WINS. NO EXCEPTIONS.
+If any file, feature, service behavior, admin action, monetization rule, partnership, or investor pressure conflicts with this Stop Layer:
+THIS LAYER WINS. NO EXCEPTIONS.
 
 ---
 
-## ✅ PERMANENTLY LOCKED PLATFORM LAWS (BINDING)
+## 1) PERMANENTLY LOCKED PLATFORM LAWS (BINDING)
 
-These files function as non-overrideable platform law:
+The following documents are non-overrideable platform law:
+- CORE_PLATFORM_CONSTITUTION.md
+- CORE_CONSTITUTIONAL_STOP_LAYER.md
+- CORE_FOUNDER_PROTECTION_AND_SUCCESSION.md
+- CORE_CONTRIBUTOR_AI_GOVERNANCE_CONTRACT.md
+- CORE_CONTRIBUTOR_GOVERNANCE_NOTICE.md
+- CORE_GOVERNANCE_INDEX_CHAIN_OF_AUTHORITY.md
 
-✅ `CORE_PLATFORM_CONSTITUTION.md`  
-✅ `CORE_CONSTITUTIONAL_STOP_LAYER.md`  
-✅ `CORE_FOUNDER_PROTECTION_AND_SUCCESSION.md`  
-✅ `CORE_CONTRIBUTOR_AI_GOVERNANCE_CONTRACT.md`  
-✅ `CORE_CONTRIBUTOR_GOVERNANCE_NOTICE.md`  
-✅ `CORE_GOVERNANCE_INDEX_CHAIN_OF_AUTHORITY.md`  
-
-If it is not expressed in one of these files → it has no authority inside CORE.
+If a rule is not expressed in these laws (or formally referenced binding laws), it has no authority inside CORE.
 
 ---
 
-## 🚫 ABSOLUTE PROHIBITIONS (NON-NEGOTIABLE)
+## 2) ABSOLUTE PROHIBITIONS (NON-NEGOTIABLE)
 
-CORE may NEVER:
-
+CORE may never:
 - Sell identity access
 - Enable demographic targeting or profiling pipelines
 - Introduce hidden tracking or fingerprinting
@@ -39,38 +34,36 @@ CORE may NEVER:
 - Grant unlogged admin overrides
 - Maintain shadow privileges for any actor (including Founder)
 
-There are NO exceptions.
+No exceptions exist.
 
 ---
 
-## ⚙️ NO UNLIMITED POWER PRINCIPLE
+## 3) NO UNLIMITED POWER PRINCIPLE
 
 No human, system, admin, founder, or service account may possess:
-
-❌ Unlogged override power  
-❌ Silent access to restricted data  
-❌ Governance bypass power  
-❌ Consent bypass power  
-❌ Audit disabling power  
+- Unlogged override power
+- Silent access to restricted data
+- Governance bypass power
+- Consent bypass power
+- Audit disabling power
 
 ---
 
-## 🧾 GIT IS LAW
+## 4) GIT IS LAW (ENFORCEABLE AUTHORITY ONLY)
 
 All enforceable authority must live in:
+- Git-governed law files
+- Governed system enforcement definitions (RLS/policies/services derived from law)
+- Audit-logged admin operations/RPCs
 
-- GitHub governance files
-- Governed policy enforcement definitions
-- Audit-logged admin RPCs / operations
-
-If a rule is not in GitHub → it does not legally exist inside CORE.
+If a rule is not in Git law, it does not legally exist inside CORE.
 
 ---
 
 ## ✅ FINALITY
 
-✅ This Stop Layer is FINAL  
-✅ No override mechanisms exist  
-✅ No founder exception exists  
-✅ No monetization exception exists  
-✅ No admin convenience exception exists
+- This Stop Layer is final
+- No override mechanisms exist
+- No founder exception exists
+- No monetization exception exists
+- No admin convenience exception exists
