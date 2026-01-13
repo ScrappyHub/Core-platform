@@ -21,7 +21,7 @@ All engines listed here inherit:
 
 ## 3. Canonical Engine Family (Truth Layer)
 
-@@
+
  | Engine Key | Name | Domain | Governance File |
  |---|---|---|---|
  | RGSR | Unified Geo-Resonance Engine | Multi-domain fusion | `verticals/rgsr/CORE_RGSR_ENGINE_GOVERNANCE.md` |
