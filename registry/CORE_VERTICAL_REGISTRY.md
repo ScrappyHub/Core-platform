@@ -21,18 +21,24 @@ All engines listed here inherit:
 
 ## 3. Canonical Engine Family (Truth Layer)
 
-| Engine Key | Name | Domain | Governance File |
-|---|---|---|---|
-| RGSR | Unified Geo-Resonance Engine | Multi-domain fusion | `verticals/rgsr/CORE_RGSR_ENGINE_GOVERNANCE.md` |
-| ARES | Acoustic Resonance Engine | Acoustics | `verticals/ares/CORE_ARES_ENGINE_GOVERNANCE.md` |
-| HYDRA | Water & Fluid Resonance Engine | Fluids | `verticals/hydra/CORE_HYDRA_ENGINE_GOVERNANCE.md` |
-| THERMOS | Thermal Dynamics Engine | Thermal | `verticals/thermos/CORE_THERMOS_ENGINE_GOVERNANCE.md` |
-| MAGNETAR | Electromagnetic Fields Engine | EM | `verticals/magnetar/CORE_MAGNETAR_ENGINE_GOVERNANCE.md` |
-| LITHOS | Geology & Materials Engine | Subsurface/material | `verticals/lithos/CORE_LITHOS_ENGINE_GOVERNANCE.md` |
-| ATMOS | Atmospheric Coupling Engine | Atmosphere | `verticals/atmos/CORE_ATMOS_ENGINE_GOVERNANCE.md` |
-| KINETIC | Structural & Vibration Engine | Mechanics | `verticals/kinetic/CORE_KINETIC_ENGINE_GOVERNANCE.md` |
-| CRYSTAL | Lattice & Molecular Engine | Lattice/material | `verticals/crystal/CORE_CRYSTAL_ENGINE_GOVERNANCE.md` |
-| SIGNAL | Sensor Fusion & Inference Engine | Signal processing | `verticals/signal/CORE_SIGNAL_ENGINE_GOVERNANCE.md` |
+--- a/registry/CORE_VERTICAL_REGISTRY.md
++++ b/registry/CORE_VERTICAL_REGISTRY.md
+@@
+ | Engine Key | Name | Domain | Governance File |
+ |---|---|---|---|
+ | RGSR | Unified Geo-Resonance Engine | Multi-domain fusion | `verticals/rgsr/CORE_RGSR_ENGINE_GOVERNANCE.md` |
+ | ARES | Acoustic Resonance Engine | Acoustics | `verticals/ares/CORE_ARES_ENGINE_GOVERNANCE.md` |
+ | HYDRA | Water & Fluid Resonance Engine | Fluids | `verticals/hydra/CORE_HYDRA_ENGINE_GOVERNANCE.md` |
+ | THERMOS | Thermal Dynamics Engine | Thermal | `verticals/thermos/CORE_THERMOS_ENGINE_GOVERNANCE.md` |
+ | MAGNETAR | Electromagnetic Fields Engine | EM | `verticals/magnetar/CORE_MAGNETAR_ENGINE_GOVERNANCE.md` |
+ | LITHOS | Geology & Materials Engine | Subsurface/material | `verticals/lithos/CORE_LITHOS_ENGINE_GOVERNANCE.md` |
+ | ATMOS | Atmospheric Coupling Engine | Atmosphere | `verticals/atmos/CORE_ATMOS_ENGINE_GOVERNANCE.md` |
+ | KINETIC | Structural & Vibration Engine | Mechanics | `verticals/kinetic/CORE_KINETIC_ENGINE_GOVERNANCE.md` |
+ | CRYSTAL | Lattice & Molecular Engine | Lattice/material | `verticals/crystal/CORE_CRYSTAL_ENGINE_GOVERNANCE.md` |
+ | SIGNAL | Sensor Fusion & Inference Engine | Signal processing | `verticals/signal/CORE_SIGNAL_ENGINE_GOVERNANCE.md` |
+| SPECTRA | Spectral Analysis & Deterministic Frequency Instruments | Spectral measurement |`verticals/spectra/CORE_SPECTRA_ENGINE_GOVERNANCE.md` |
+| GEON | Geophysical Numerics & Earth-Frame Measurement Engine | Earth-frame numerics | `verticals/geon/CORE_GEON_ENGINE_GOVERNANCE.md` |
+
 
 ## 4. Registry Change Rules
 
