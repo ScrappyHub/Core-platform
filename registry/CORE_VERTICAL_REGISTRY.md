@@ -21,8 +21,6 @@ All engines listed here inherit:
 
 ## 3. Canonical Engine Family (Truth Layer)
 
---- a/registry/CORE_VERTICAL_REGISTRY.md
-+++ b/registry/CORE_VERTICAL_REGISTRY.md
 @@
  | Engine Key | Name | Domain | Governance File |
  |---|---|---|---|
