@@ -1,25 +1,25 @@
 # 🧩 CORE — TRUTH-ADJACENT BASE GOVERNANCE (CANONICAL)
 
 Authority Level: Binding Base Governance  
-Applies To: TRUTH_ADJACENT_COMPUTE engines (e.g., SIGNAL, SPECTRA, GEON)  
+Applies To: TRUTH_ADJACENT_COMPUTE engines (SIGNAL, SPECTRA, GEON)  
 Status: ✅ BINDING | ✅ NON-OPTIONAL  
 Effective Date: First Public CORE Deployment  
 
 ---
 
-## 1. Purpose
+## 1. PURPOSE
 
 Truth-Adjacent Compute engines perform deterministic transforms and derived measurements.
-They do not generate new domain truth (no solver authority) and do not interpret meaning.
+They do not generate new domain truth and do not interpret meaning.
 
 These engines exist to:
 - compute deterministic transforms on sealed inputs
 - emit reproducible numeric artifacts
-- remain replayable and audit-valid under CORE run bundling and sealing law
+- remain replayable and audit-valid under CORE sealing and comparison law
 
 ---
 
-## 2. Governance Inheritance (Absolute)
+## 2. GOVERNANCE INHERITANCE (ABSOLUTE)
 
 Truth-Adjacent Compute engines are permanently subordinate to CORE platform law, including:
 - CORE_CONSTITUTIONAL_STOP_LAYER.md
@@ -35,7 +35,7 @@ If any conflict exists → CORE law prevails immediately.
 
 ---
 
-## 3. Execution Model (Non-Negotiable)
+## 3. EXECUTION MODEL (NON-NEGOTIABLE)
 
 All Truth-Adjacent Compute engines MUST enforce:
 - deterministic execution required (same inputs + parameters + engine version ⇒ replayable results)
@@ -48,7 +48,7 @@ All Truth-Adjacent Compute engines MUST enforce:
 
 ---
 
-## 4. Scope Limits (Hard Boundary)
+## 4. SCOPE LIMITS (HARD BOUNDARY)
 
 Truth-Adjacent Compute engines MAY:
 - compute deterministic transforms on sealed inputs
@@ -64,7 +64,7 @@ Truth-Adjacent Compute engines MUST NOT:
 
 ---
 
-## 5. Sealing & Replay Requirements
+## 5. SEALING & REPLAY REQUIREMENTS
 
 Truth-Adjacent Compute engines MUST:
 - emit schema-valid RUN_OUTPUT.json only
@@ -76,7 +76,7 @@ CORE is the sealing authority. Engines must be seal-compatible.
 
 ---
 
-## 6. Coupling Rules (Declarative Only)
+## 6. COUPLING RULES (DECLARATIVE ONLY)
 
 Truth-Adjacent Compute engines MUST:
 - forbid peer delivery
@@ -85,7 +85,7 @@ Truth-Adjacent Compute engines MUST:
 
 ---
 
-## 7. Change Control
+## 7. CHANGE CONTROL
 
 Any change that affects:
 - determinism controls
@@ -101,7 +101,7 @@ Any change that affects:
 
 ---
 
-## 8. Declaration
+## 8. DECLARATION
 
 Truth-Adjacent Compute engines emit deterministic transforms and derived measurements only.
 Meaning and action are applied by CORE lenses, never these engines.
