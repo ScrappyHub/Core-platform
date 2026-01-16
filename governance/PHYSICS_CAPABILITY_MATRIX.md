@@ -1,47 +1,110 @@
 # 🧠 CORE — PHYSICS CAPABILITY MATRIX (CANONICAL V1)
 
-Authority Level: Binding Platform Spec
-Effective Date: First Public CORE Deployment
-Status: ✅ LOCKED | ✅ BINDING | ✅ NON-OPTIONAL
+Authority Level: Binding Platform Specification  
+Status: ✅ LOCKED | ✅ BINDING | ✅ NON-OPTIONAL  
 
-## Global Capability Keys (Locked)
+---
 
-### Atmospheric
-- CAP_WIND_SPEED (m/s canonical)
-- CAP_RAIN_RATE (mm/hr canonical)
-- CAP_SNOW_RATE (mm/hr SWE canonical)
-- CAP_HURRICANE_COUPLING (unit-tagged)
+## PURPOSE
 
-### Hydrology / Earth
-- CAP_TSUNAMI_WAVE_DYNAMICS (unit-tagged)
-- CAP_MUDSLIDE_FLOW (unit-tagged)
-- CAP_LAYERED_MEDIA_RESPONSE (unit-tagged)
+This matrix defines the **maximum allowable physics primitives**
+that CORE engines may emit.
 
-### Motion / Kinematics
-- CAP_MOVING_OBJECT_SPEED (m/s canonical)
-- CAP_DISTANCE_SCALING (distance_scale_factor ∈ {0.25, 0.50, 0.75, 1.00})
+Capabilities describe **numerical affordances only**.
+They do not imply interpretation.
 
-### Other
-- CAP_EM_FIELD_COUPLING (unit-tagged)
-- CAP_THERMAL_GRADIENTS (unit-tagged)
-- CAP_STRUCTURAL_FAILURE_SIGNATURES (unit-tagged)
-- CAP_CRYSTAL_RESONANCE (unit-tagged)
-- CAP_SIGNAL_TRANSFORMS (unit-tagged where applicable)
-- CAP_FUSION_CORRELATION (correlation-only; unit-tagged where applicable)
+---
+
+## ACOUSTICS (ARES)
+- CAP_SOUND_PRESSURE_LEVEL
+- CAP_FREQUENCY_RESPONSE
+- CAP_RESONANCE_MODES
+- CAP_HARMONIC_SERIES
+
+---
+
+## FLUIDS (HYDRA)
+- CAP_FLOW_RATE
+- CAP_PRESSURE_FIELD
+- CAP_WAVE_HEIGHT
+- CAP_CONTINUITY_CONSTRAINT
+
+---
+
+## THERMAL (THERMOS)
+- CAP_TEMPERATURE_SCALAR
+- CAP_THERMAL_GRADIENT
+- CAP_EXPONENTIAL_DECAY
+- CAP_HEAT_FLUX
+
+---
+
+## ELECTROMAGNETIC (MAGNETAR)
+- CAP_EM_FIELD_E
+- CAP_EM_FIELD_B
+- CAP_RC_TIME_CONSTANT
+- CAP_EM_FIELD_COUPLING
+
+---
+
+## GEOLOGY & MATERIALS (LITHOS / CRYSTAL)
+- CAP_LAYERED_MEDIA_RESPONSE
+- CAP_ELASTIC_RESPONSE
+- CAP_STRAIN_SCALAR
+- CAP_CRYSTAL_RESONANCE
+
+---
+
+## ATMOSPHERIC (ATMOS)
+- CAP_WIND_SPEED
+- CAP_PRESSURE_GRADIENT
+- CAP_AIR_DENSITY
+- CAP_PRECIPITATION_RATE
+
+---
+
+## MECHANICS (KINETIC)
+- CAP_POSITION_1D
+- CAP_VELOCITY_1D
+- CAP_ACCELERATION_1D
+- CAP_FORCE_SCALAR
+
+---
+
+## SIGNAL PROCESSING (SIGNAL)
+- CAP_SIGNAL_TIME_SERIES
+- CAP_SIGNAL_TRANSFORMS
+
+---
+
+## SPECTRAL MEASUREMENT (SPECTRA)
 - CAP_SPECTRA_FFT_1D
 - CAP_SPECTRA_PSD_WELCH
-- CAP_SPECTRA_PSD_PERIODOGRAM
-- CAP_SPECTRA_CROSS_SPECTRUM
 - CAP_SPECTRA_COHERENCE
 - CAP_SPECTRA_STFT
+
+---
+
+## EARTH-FRAME NUMERICS (GEON)
 - CAP_GEON_FRAME_TRANSFORMS
 - CAP_GEON_SCALAR_GRADIENT
 - CAP_GEON_VECTOR_DIVERGENCE
-- CAP_GEON_SCALAR_LAPLACIAN
 - CAP_GEON_FLUX_INTEGRAL
-- CAP_GEON_SLOPE_MAGNITUDE
-- CAP_GEON_POTENTIAL_FIELD_PRIMITIVE
 
-## Prohibition
-No capability key implies meaning or classification.
-All classification (missile/rocket/submarine/tsunami/etc.) is performed by CORE lenses (vertical repos), never engines.
+---
+
+## FUSION (RGSR)
+- CAP_MULTI_DOMAIN_ALIGNMENT
+- CAP_SEALED_RUN_COMPARISON
+- CAP_FUSION_CORRELATION
+
+---
+
+## PROHIBITION
+
+No capability:
+- implies classification
+- implies prediction
+- implies hazard labeling
+
+All interpretation occurs **outside engines**.
