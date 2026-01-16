@@ -1,116 +1,75 @@
-# 🧠 CORE — VERTICAL & ENGINE REGISTRY (CANONICAL)
+# 🧾 CORE — VERTICAL REGISTRY (CANONICAL)
 
-Authority Level: Registry Law  
+File: registry/CORE_VERTICAL_REGISTRY.md  
+Authority Level: Binding Registry Index  
+Status: ✅ BINDING | ✅ NON-OPTIONAL  
 Effective Date: First Public CORE Deployment  
 
-Parent Authorities:
-- CORE_CONSTITUTIONAL_STOP_LAYER.md
-- CORE_PLATFORM_CONSTITUTION.md
-- CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md
+---
 
-This file is the exclusive source of truth for engines permitted inside CORE.
+## 1. PURPOSE
 
-If an engine is not registered here, it does not legally exist inside CORE.
+This file is the authoritative registry of all CORE engines.
+Anything not listed here does not exist inside CORE.
+
+This registry binds:
+- engine identity (engine key)
+- engine domain scope
+- engine governance file
+- engine lane expectations (declared in governance file)
+- sealing and replay compatibility requirements
 
 ---
 
-## REGISTRY RULES (ABSOLUTE)
+## 2. AUTHORITY & INHERITANCE
 
-1) An engine is ACTIVE only if it has:
-- A registered identity and status in this file
-- An engine governance file (path recorded here)
-- A declared versioning policy
-- Integrity hooks (audit, sealing, replay compatibility)
+All engines listed here inherit:
 
-2) Registry changes require Git-governed amendment.
-3) CORE may suspend engines for integrity/safety violations (per law).
-4) Engines may not claim out-of-domain interpretation (instrument-only posture).
+- CORE_CONSTITUTIONAL_STOP_LAYER.md  
+- CORE_PLATFORM_CONSTITUTION.md  
+- CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md  
+- CORE_GOVERNANCE_INDEX_CHAIN_OF_AUTHORITY.md  
+- CORE_ENGINE_REGISTRY_CONTRACT.md  
 
----
-
-## ENGINE #1 — RGSR
-Name: Resonant Geophysical Systems Research  
-Type: Multi-domain physics execution engine  
-Domains: Acoustic, Fluid, Thermal, EM, Geology, Structural  
-Status: ACTIVE  
-Publication Model: Restricted / Review-gated  
-Governance File: verticals/rgsr/CORE_RGSR_ENGINE_GOVERNANCE.md
+Inheritance is automatic and non-optional.
 
 ---
 
-## ENGINE #2 — ARES
-Name: Acoustic Resonance Engine  
-Domain: Acoustics, vibration, harmonics  
-Status: DEFINED (inactive until governance file exists)  
-Governance File: Pending
+## 3. CANONICAL ENGINE REGISTRY (IDENTITY + GOVERNANCE)
+
+| Engine Key | Name | Domain | Governance File |
+|-----------|------|--------|----------------|
+| RGSR | Resonant Geophysical Systems Research | Multi-domain resolver (sealed inputs only) | verticals/rgsr/CORE_RGSR_ENGINE_GOVERNANCE.md |
+| ARES | Acoustic Resonance Engine | Acoustics | verticals/ares/CORE_ARES_ENGINE_GOVERNANCE.md |
+| HYDRA | Water & Fluid Resonance Engine | Fluids | verticals/hydra/CORE_HYDRA_ENGINE_GOVERNANCE.md |
+| THERMOS | Thermal Dynamics Engine | Thermal | verticals/thermos/CORE_THERMOS_ENGINE_GOVERNANCE.md |
+| ELECTROMAGNETIC | Electromagnetic Measurement Engine | Deterministic EM measurement physics | verticals/electromagnetic/CORE_ELECTROMAGNETIC_ENGINE_GOVERNANCE.md |
+| MAGNETAR | Advanced Electromagnetic Field Engine | EM fields & coupling | verticals/magnetar/CORE_MAGNETAR_ENGINE_GOVERNANCE.md |
+| LITHOS | Geology & Materials Engine | Subsurface/material | verticals/lithos/CORE_LITHOS_ENGINE_GOVERNANCE.md |
+| ATMOS | Atmospheric Physics Engine | Atmosphere | verticals/atmos/CORE_ATMOS_ENGINE_GOVERNANCE.md |
+| KINETIC | Structural & Vibration Engine | Mechanics | verticals/kinetic/CORE_KINETIC_ENGINE_GOVERNANCE.md |
+| CRYSTAL | Lattice & Microstructure Engine | Materials microstructure | verticals/crystal/CORE_CRYSTAL_ENGINE_GOVERNANCE.md |
+| SIGNAL | Deterministic Signal Engine | Transform + derived measurement | verticals/signal/CORE_SIGNAL_ENGINE_GOVERNANCE.md |
+| SPECTRA | Spectral Instruments Engine | FFT/PSD/coherence instruments | verticals/spectra/CORE_SPECTRA_ENGINE_GOVERNANCE.md |
+| GEON | Earth-Frame Numerics Engine | Earth-frame primitives | verticals/geon/CORE_GEON_ENGINE_GOVERNANCE.md |
 
 ---
 
-## ENGINE #3 — HYDRA
-Name: Water & Fluid Resonance Engine  
-Domain: Hydrodynamics, waves, pressure flow  
-Status: DEFINED (inactive until governance file exists)  
-Governance File: Pending
+## 4. ENGINE IDENTITY RULE (ABSOLUTE)
+
+Engine identity is defined only by this registry.
+
+Runtime filenames, directory names, or module names do not define engine identity.
+
+The engine key recorded in sealed artifacts must match this registry.
 
 ---
 
-## ENGINE #4 — THERMOS
-Name: Thermal Dynamics Engine  
-Domain: Heat flow, gradients, phase behavior (declared only)  
-Status: DEFINED (inactive until governance file exists)  
-Governance File: Pending
+## 5. REGISTRY CHANGE RULES
 
----
+Adding/removing/modifying an engine requires:
+- governance review
+- governance file present
+- registry update committed with audit trace
 
-## ENGINE #5 — MAGNETAR
-Name: Electromagnetic Field Engine  
-Domain: E/B fields, material response (declared only)  
-Status: DEFINED (inactive until governance file exists)  
-Governance File: Pending
-
----
-
-## ENGINE #6 — LITHOS
-Name: Geology & Materials Engine  
-Domain: Layered media, material properties, subsurface models (declared only)  
-Status: DEFINED (inactive until governance file exists)  
-Governance File: Pending
-
----
-
-## ENGINE #7 — ATMOS
-Name: Atmospheric Physics Engine  
-Domain: Gas state, wind fields, precipitation parameterization (declared only)  
-Status: DEFINED (inactive until governance file exists)  
-Governance File: Pending
-
----
-
-## ENGINE #8 — KINETIC
-Name: Structural Mechanics Engine  
-Domain: Motion, stress/strain, vibration response (declared only)  
-Status: DEFINED (inactive until governance file exists)  
-Governance File: Pending
-
----
-
-## ENGINE #9 — CRYSTAL
-Name: Lattice & Materials Microstructure Engine  
-Domain: Parameterized microstructure properties (no quantum claims)  
-Status: DEFINED (inactive until governance file exists)  
-Governance File: Pending
-
----
-
-## ENGINE #10 — SIGNAL
-Name: Sensor Fusion & Inference Engine  
-Domain: Signal processing over declared measurements (no profiling)  
-Status: DEFINED (inactive until governance file exists)  
-Governance File: Pending
-
----
-
-## 🧾 GIT IS LAW
-
-This registry is legally binding only as committed in Git.
-If it is not here, it does not exist inside CORE.
+Unregistered engines must be rejected at runtime.
