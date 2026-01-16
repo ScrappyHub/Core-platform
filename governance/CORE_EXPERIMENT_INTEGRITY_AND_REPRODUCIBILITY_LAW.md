@@ -1,133 +1,228 @@
 # 🧪 CORE — EXPERIMENT INTEGRITY & REPRODUCIBILITY LAW (CANONICAL)
 
-Authority Level: Binding Platform Law  
-Enforcement Chain (Non-Negotiable):
-
-1. CORE_CONSTITUTIONAL_STOP_LAYER.md  
-2. CORE_PLATFORM_CONSTITUTION.md  
-3. CORE_EXPERIMENT_INTEGRITY_AND_REPRODUCIBILITY_LAW.md  
-4. CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md  
-5. Engine-level governance files  
-6. Data storage, permissions, artifact locking  
-7. UI and publication tooling  
-
+File: CORE_EXPERIMENT_INTEGRITY_AND_REPRODUCIBILITY_LAW.md  
+Authority Level: Binding Scientific Integrity Law  
+Status: ✅ LOCKED | ✅ BINDING | ✅ NON-OPTIONAL  
 Effective Date: First Public CORE Deployment  
 
 ---
 
-## 🧠 PURPOSE
+## 1. PURPOSE (BINDING)
 
-This law guarantees that all experiments executed on CORE:
+This law defines the **scientific integrity guarantees** of CORE.
 
-- Are reproducible
-- Are auditable
-- Cannot be silently altered
-- Preserve scientific integrity
-- Maintain cryptographic provenance
+It governs:
+- how experiments (engine runs) are created
+- how results are sealed
+- how artifacts are preserved
+- how replay and verification must work
+- how comparisons are treated as first-class scientific objects
 
-This law applies to **all engines**, including RGSR and future engines.
+CORE is a **computational measurement instrument**, not a simulator.
 
----
-
-## 🧬 CORE DEFINITION OF AN EXPERIMENT
-
-An experiment is defined as:
-
-- A specific engine
-- A fixed engine version
-- A defined set of inputs
-- A defined set of parameters
-- A defined execution environment
-- A deterministic execution process
-- A sealed output artifact set
-
-Anything less is **not an experiment** under CORE law.
+All results must be:
+- deterministic
+- sealed
+- replayable
+- auditable under hostile review
 
 ---
 
-## 🔒 EXPERIMENT IMMUTABILITY RULE
+## 2. DEFINITIONS (CANONICAL)
 
-Once an experiment is sealed:
+### Experiment / Run
+A single execution of an engine under a declared configuration.
 
-❌ Inputs may not change  
-❌ Parameters may not change  
-❌ Outputs may not be overwritten  
-❌ Metadata may not be silently edited  
+### Sealed Run
+A run that has completed execution and has been cryptographically sealed.
+A sealed run is immutable.
 
-Any change requires:
-- A new experiment ID
-- A new execution
-- A new audit trail
+### Output Artifact
+The canonical JSON output emitted by an engine and sealed by CORE.
+Exactly one output artifact exists per sealed run.
 
----
-
-## 🧾 REQUIRED ARTIFACTS (MINIMUM)
-
-Every experiment must generate:
-
-- RUN_CONDITIONS.json  
-- SHA256SUMS.txt  
-- Engine version identifier  
-- Parameter manifest  
-- Output artifacts (domain-specific)  
-
-Engines may generate additional artifacts, but these are mandatory.
+### Comparison Artifact
+A cryptographically sealed A/B comparison between two sealed runs.
 
 ---
 
-## 🔐 CRYPTOGRAPHIC VERIFICATION
+## 3. RUN LIFECYCLE (ENFORCED)
 
-CORE enforces:
+All runs MUST follow this lifecycle:
 
-- Hash verification of all artifacts
-- Hash persistence in storage
-- Hash comparison on retrieval
-- Detection of tampering or mismatch
+1. `created`
+2. `running`
+3. `sealed`
 
-If verification fails → the experiment is invalidated.
+Transitions are one-way.
 
----
-
-## 🔁 REPRODUCIBILITY REQUIREMENT
-
-A valid experiment must be reproducible by:
-
-- Re-running the same engine
-- With the same inputs and parameters
-- Under the same engine version
-
-CORE does not guarantee identical *performance* —  
-it guarantees identical *results*.
+Once a run reaches `sealed`:
+- no mutation is permitted
+- no deletion is permitted
+- no reinterpretation is permitted
 
 ---
 
-## 🛑 PROHIBITED ACTIONS
+## 4. DETERMINISM REQUIREMENT (ABSOLUTE)
 
-It is forbidden to:
+Every engine run MUST declare:
 
-- Modify experiment outputs post-seal
-- Replace artifacts under the same ID
-- Publish partial or altered results as complete
-- Suppress failed runs without record
-- Cherry-pick results without provenance
+- engine key
+- engine version
+- configuration payload
+- determinism parameters (seed, dt, units, resolution, etc.)
 
-Violations are enforced under:
-- CORE_CONSTITUTIONAL_STOP_LAYER.md
+Given:
+- identical engine version
+- identical configuration
+- identical determinism parameters
 
----
+→ the output MUST be byte-for-byte reproducible.
 
-## 🧾 GIT-LOCKED AUTHORITY
-
-This law is authoritative only as written in GitHub.
-
-If it is not written here →  
-it has no authority over CORE experiments.
+Failure to reproduce constitutes an **integrity violation**.
 
 ---
 
-## ✅ RATIFICATION
+## 5. SEALING CONTRACT (BINDING)
 
-Ratified by:
-- CORE_CONSTITUTIONAL_STOP_LAYER.md  
-- CORE_PLATFORM_CONSTITUTION.md  
-- CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md  
+A run may be sealed **only** via CORE-controlled sealing.
+
+For a run to be sealed, the following MUST exist:
+
+- config_hash_sha256  
+- engine_manifest_hash_sha256  
+- outputs_hash_sha256  
+- seal_hash_sha256  
+- sealed_at timestamp  
+
+The seal hash MUST bind:
+- engine identity
+- engine version
+- configuration
+- determinism parameters
+- output artifact
+
+Engines MUST NOT self-seal.
+
+CORE is the sole sealing authority.
+
+---
+
+## 6. OUTPUT ARTIFACT RULES
+
+Each sealed run MUST have:
+
+- exactly one output artifact
+- output stored verbatim as canonical JSON
+- canonical serialization (jsonb::text) hashed with SHA-256
+- immutable storage enforced by database constraints
+
+Output artifacts:
+- may not be updated
+- may not be deleted
+- may not be replaced
+
+---
+
+## 7. INVARIANTS & VALIDATION
+
+If an engine declares invariants:
+
+- invariants MUST be computed at runtime
+- invariants MUST be stored inside the output artifact
+- invariant results are sealed along with outputs
+
+Invariant failures:
+- do not invalidate the run
+- are recorded as part of the measurement truth
+- may not be suppressed or rewritten
+
+---
+
+## 8. REPLAY & VERIFICATION
+
+CORE MUST support:
+
+- replaying any sealed run
+- recomputing outputs under declared parameters
+- verifying output hash equality
+- verifying seal hash integrity
+
+Verification MUST fail if:
+- any input differs
+- any version differs
+- any output differs
+
+---
+
+## 9. COMPARISON ARTIFACTS (FIRST-CLASS)
+
+CORE treats comparisons as **primary scientific artifacts**, not metadata.
+
+A comparison artifact MUST:
+
+- reference two sealed runs (A and B)
+- compute deterministic diffs
+- store diffs verbatim
+- be sealed and hashed
+- be immutable
+
+Comparisons:
+- may not be updated
+- may not be deleted
+- may not be reinterpreted
+
+---
+
+## 10. DIFFERENTIAL TRUTH PRINCIPLE
+
+CORE does not only ask:
+> “What is the result?”
+
+CORE asks:
+> “What changed between two controlled measurements?”
+
+A/B comparison artifacts are **equal in authority** to raw outputs.
+
+---
+
+## 11. PROHIBITIONS
+
+No component may:
+
+- modify sealed runs
+- modify sealed outputs
+- modify sealed comparisons
+- retroactively alter configurations
+- substitute outputs
+- discard failed invariants
+
+Any attempt constitutes a **scientific integrity violation**.
+
+---
+
+## 12. ENFORCEMENT
+
+This law is enforced by:
+
+- database constraints
+- triggers
+- RLS policies
+- sealed artifact custody
+- Git-governed schema evolution
+
+If enforcement fails → the system is invalid.
+
+---
+
+## 13. DECLARATION
+
+CORE guarantees that every sealed artifact represents a **verifiable computational measurement**.
+
+Scientific truth inside CORE is:
+- deterministic
+- immutable
+- auditable
+- reproducible
+
+Anything else is rejected by design.
