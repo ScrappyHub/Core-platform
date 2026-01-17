@@ -1,80 +1,161 @@
 # CORE ENGINE — MAGNETAR GOVERNANCE (CANONICAL)
 
 Engine Key: MAGNETAR  
-Engine Role: TRUTH_ENGINE  
+Engine Kind: TRUTH_ENGINE  
 Authority Level: Engine Governance (Binding)  
 Status: ✅ BINDING | ✅ NON-OPTIONAL  
 
-## 1. Governance Inheritance
+---
 
-Inherited base governance:
-- TRUTH_ENGINE_BASE_GOVERNANCE.md
+## 1. Governance Inheritance (Absolute)
 
-Inherited CORE law:
-- CORE_CONSTITUTIONAL_STOP_LAYER.md
-- CORE_PLATFORM_CONSTITUTION.md
-- CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md
-- CORE_GOVERNANCE_INDEX_CHAIN_OF_AUTHORITY.md
-- CORE_EXPERIMENT_INTEGRITY_AND_REPRODUCIBILITY_LAW.md
-- CORE_TENANT_BOUNDARY_AND_DATA_SEPARATION_LAW.md
-- CORE_TELEMETRY_OBSERVABILITY_CONSENT_LAW.md
-- CORE_SENSOR_IO_SAFETY_AND_MISUSE_PREVENTION_LAW.md
+MAGNETAR is permanently bound by the following governance layers.
 
-If any conflict exists → CORE law prevails immediately.
+### Base Engine Governance
+- `TRUTH_ENGINE_BASE_GOVERNANCE.md`
 
-## 2. Engine Scope
+### CORE Platform Law
+- `CORE_CONSTITUTIONAL_STOP_LAYER.md`
+- `CORE_PLATFORM_CONSTITUTION.md`
+- `CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW.md`
+- `CORE_GOVERNANCE_INDEX_CHAIN_OF_AUTHORITY.md`
+- `CORE_EXPERIMENT_INTEGRITY_AND_REPRODUCIBILITY_LAW.md`
+- `CORE_TENANT_BOUNDARY_AND_DATA_SEPARATION_LAW.md`
+- `CORE_TELEMETRY_OBSERVABILITY_CONSENT_LAW.md`
+- `CORE_SENSOR_IO_SAFETY_AND_MISUSE_PREVENTION_LAW.md`
 
-MAGNETAR computes electromagnetic physics outputs:
-- E/B field distributions
-- induction and coupling behaviors
-- conductivity interaction indicators (as modeled)
-- frequency-domain response (as modeled)
+If any conflict exists → CORE law prevails immediately and without exception.
 
-## 3. Explicit Non-Scope
+---
 
-MAGNETAR cannot:
-- infer communications content or perform surveillance conclusions
-- classify objects or threats
-- output intent, targeting, or operational directives
-- manage identity, permissions, tiers, billing, feature flags, or governance state
+## 2. Engine Mandate (Strict)
 
-## 4. Execution & Determinism
+MAGNETAR is a field-level electromagnetic physics engine.
 
-- Deterministic execution required.
-- No network access.
-- Inputs delivered by CORE runtime only.
-- Outputs returned to CORE only.
-- No post-seal mutation.
+Its sole mandate is to compute governed electromagnetic field behavior under declared configurations.
 
-## 5. Artifacts & Sealing Expectations
+MAGNETAR may compute, where explicitly implemented by lane and version:
 
-References:
-- governance/RUN_BUNDLE_SPEC.md
-- governance/UNITS_AND_CONVERSIONS.md
-- governance/PHYSICS_CAPABILITY_MATRIX.md
-- Engine repo SEALING/SEALING_SPEC.md and schemas
+- electric field distributions
+- magnetic field distributions
+- field evolution under boundary conditions
+- material-coupled electromagnetic response
+- induction and coupling behavior
+- frequency-domain field response
 
-Engine emits schema-valid outputs only; CORE seals.
+All computation is physics-bound, deterministic, and non-interpretive.
 
-## 6. Coupling Semantics
+---
 
-- No peer delivery.
-- CORE mediates all cross-engine data flow.
-- COUPLING_RULES.json is declarative.
+## 3. Explicit Separation of Responsibility (Critical)
 
-## 7. Prohibited Use
+MAGNETAR is **not** the electromagnetic measurement engine.
 
-- covert monitoring / surveillance determinations
-- weaponization, targeting, operational directives
-- identity inference or user profiling
-- modification of sealed artifacts
-- classification claims (missile/rocket/submarine/etc.)
+- **ELECTROMAGNETIC** computes analytic and low-order deterministic electromagnetic measurement primitives.
+- **MAGNETAR** computes field-level and solver-class electromagnetic physics.
 
-## 8. Change Control
+MAGNETAR must not implement analytic measurement primitives that belong to ELECTROMAGNETIC.
+ELECTROMAGNETIC must not implement field solvers reserved for MAGNETAR.
 
-Manifest + registry update required.
+This separation is enforced by registry law and may not be bypassed.
 
-## 9. Declaration
+---
 
-MAGNETAR emits electromagnetic physics truth only.
-Meaning and action are applied by CORE lenses, never MAGNETAR.
+## 4. Explicit Non-Scope (Hard Prohibitions)
+
+MAGNETAR must never:
+
+- infer communications content or semantic meaning
+- perform surveillance, monitoring, or attribution
+- classify objects, platforms, threats, or intent
+- generate targeting, operational, or tactical directives
+- infer identity, agency, or behavior
+- manage identity, permissions, tiers, billing, or feature flags
+- modify, overwrite, or reinterpret sealed artifacts
+
+Any attempt to perform prohibited behavior invalidates the engine.
+
+---
+
+## 5. Execution & Determinism Requirements
+
+All MAGNETAR execution must satisfy:
+
+- deterministic execution only
+- no stochastic terms unless explicitly declared and governed
+- no network access
+- no external data fetches at runtime
+- inputs delivered exclusively by CORE runtime
+- outputs returned exclusively to CORE
+- no post-seal mutation under any circumstance
+
+Identical inputs, configuration, engine version, and speed factor must yield replayable results after canonical normalization.
+
+---
+
+## 6. Artifact & Sealing Contract
+
+MAGNETAR emits schema-valid physics outputs only.
+
+Sealing authority resides exclusively with CORE.
+
+Applicable specifications include:
+- `governance/RUN_BUNDLE_SPEC.md`
+- `governance/UNITS_AND_CONVERSIONS.md`
+- `governance/PHYSICS_CAPABILITY_MATRIX.md`
+- Engine-local sealing schemas under `SEALING/`
+
+MAGNETAR must be seal-compatible. It may not self-seal.
+
+---
+
+## 7. Coupling Semantics (Declarative Only)
+
+MAGNETAR must not communicate directly with any other engine.
+
+- peer-to-peer delivery is forbidden
+- all cross-engine interaction is mediated by CORE
+- `COUPLING_RULES.json` defines declarative routing constraints only
+- no runtime discovery or negotiation is permitted
+
+---
+
+## 8. Prohibited Use (Enforced)
+
+MAGNETAR must not be used for:
+
+- covert monitoring or surveillance determinations
+- weapons development, targeting, or operational planning
+- intelligence analysis or profiling
+- classification claims (e.g., missile, rocket, submarine)
+- post-hoc result manipulation
+
+Violation triggers engine invalidation.
+
+---
+
+## 9. Change Control
+
+Any change affecting:
+
+- solver scope
+- determinism guarantees
+- output schema
+- capability keys
+- coupling constraints
+
+requires:
+- manifest update
+- registry update
+- governance review
+- auditable Git commit
+
+Silent changes are forbidden.
+
+---
+
+## 10. Declaration
+
+MAGNETAR produces electromagnetic field physics truth only.
+
+Meaning, classification, interpretation, and action are applied exclusively by CORE lenses, never by MAGNETAR.
